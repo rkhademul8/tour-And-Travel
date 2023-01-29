@@ -128,14 +128,14 @@ const UserDashboardSideBar = () => {
   const { logout } = useAuthentication();
 
   return (
-    <Box sx={{ display: "flex" }}>
+    <Box sx={{ display: "flex" }} className="sideBar-user">
       <CssBaseline />
       <Drawer variant="permanent" open={open}>
         <DrawerHeader
           style={{
-            background: "var(--secondary-color)",
+            background: "var(  --primary-color)",
             display: "block",
-            borderRight: "5px solid var(--primary-color)",
+            borderRight: "5px solid var(--secondary-color)",
           }}
         >
           <Box onClick={() => setOpen(!open)}>
@@ -154,15 +154,15 @@ const UserDashboardSideBar = () => {
             height: "100vh",
             overflowY: "hidden",
             overflowX: "hidden",
-            background: "var(--secondary-color)",
-            borderRight: "5px solid var(--primary-color)",
+            background: "var(  --primary-color)",
+            borderRight: "5px solid var(--secondary-color)",
           }}
         >
           {/* dashboard  home */}
 
           <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
-              to="/dashboardhome/dashboard"
+              to="/"
               className={({ isActive }) =>
                 isActive ? "active-nav" : "normal-nav"
               }
@@ -207,10 +207,10 @@ const UserDashboardSideBar = () => {
           </ListItem>
 
           {/* manage  */}
-          {/* <Box>
+          <Box>
             <ListItem disablePadding sx={{ display: "block" }}>
               <NavLink
-                to={"/dashboardhome/traveller"}
+                to={"/userdashboardhome/mystaff"}
                 className={({ isActive }) =>
                   isActive ? "active-nav" : "normal-nav"
                 }
@@ -242,7 +242,7 @@ const UserDashboardSideBar = () => {
                       style={{
                         fontSize: "28px",
                         margin: "10px 0px",
-                        color: "var(--primary-color)",
+                        color: "var(--white)",
                       }}
                     />
                   </ListItemIcon>
@@ -251,7 +251,7 @@ const UserDashboardSideBar = () => {
                     primary="Manage"
                     sx={{
                       opacity: open ? 1 : 0,
-                      color: "var(--primary-color)",
+                      color: "var(--white)",
                     }}
                   />
                 </ListItemButton>
@@ -260,7 +260,7 @@ const UserDashboardSideBar = () => {
             <Box
               style={{
                 display: subManu === "Manage" ? "" : "none",
-                background: open ? "var(--primary-color)" : "",
+                background: open ? "var(--secondary-color)" : "",
               }}
               className="admin-DashSubManu"
             >
@@ -273,12 +273,10 @@ const UserDashboardSideBar = () => {
                     display: "block",
                     background:
                       subManuActive === "HomeContent"
-                        ? "var(--secondary-color)"
-                        : "",
-                    color:
-                      subManuActive === "HomeContent"
                         ? "var(--primary-color)"
                         : "",
+                    color:
+                      subManuActive === "HomeContent" ? "var(--white)" : "",
                   }}
                   onClick={() => {
                     setSubMenuActive("HomeContent");
@@ -291,12 +289,9 @@ const UserDashboardSideBar = () => {
                     display: "block",
                     background:
                       subManuActive === "GroupFare"
-                        ? "var( --secondary-color)"
+                        ? "var( --primary-color)"
                         : "",
-                    color:
-                      subManuActive === "GroupFare"
-                        ? "var(--primary-color)"
-                        : "",
+                    color: subManuActive === "GroupFare" ? "var(--white)" : "",
                   }}
                   onClick={() => {
                     setSubMenuActive("GroupFare");
@@ -308,11 +303,8 @@ const UserDashboardSideBar = () => {
                   style={{
                     display: "block",
                     background:
-                      subManuActive === "Umrah"
-                        ? "var( --secondary-color)"
-                        : "",
-                    color:
                       subManuActive === "Umrah" ? "var(--primary-color)" : "",
+                    color: subManuActive === "Umrah" ? "var(--white)" : "",
                   }}
                   onClick={() => {
                     setSubMenuActive("Umrah");
@@ -324,9 +316,8 @@ const UserDashboardSideBar = () => {
                   style={{
                     display: "block",
                     background:
-                      subManuActive === "Tour" ? "var( --secondary-color)" : "",
-                    color:
                       subManuActive === "Tour" ? "var(--primary-color)" : "",
+                    color: subManuActive === "Tour" ? "var(--white)" : "",
                   }}
                   onClick={() => {
                     setSubMenuActive("Tour");
@@ -338,11 +329,8 @@ const UserDashboardSideBar = () => {
                   style={{
                     display: "block",
                     background:
-                      subManuActive === "Others"
-                        ? "var( --secondary-color)"
-                        : "",
-                    color:
                       subManuActive === "Others" ? "var(--primary-color)" : "",
+                    color: subManuActive === "Others" ? "var(--white)" : "",
                   }}
                   onClick={() => {
                     setSubMenuActive("Others");
@@ -354,11 +342,8 @@ const UserDashboardSideBar = () => {
                   style={{
                     display: "block",
                     background:
-                      subManuActive === "Control"
-                        ? "var( --secondary-color)"
-                        : "",
-                    color:
                       subManuActive === "Control" ? "var(--primary-color)" : "",
+                    color: subManuActive === "Control" ? "var(--white)" : "",
                   }}
                   onClick={() => {
                     setSubMenuActive("Control");
@@ -370,9 +355,8 @@ const UserDashboardSideBar = () => {
                   style={{
                     display: "block",
                     background:
-                      subManuActive === "Visa" ? "var( --secondary-color)" : "",
-                    color:
                       subManuActive === "Visa" ? "var(--primary-color)" : "",
+                    color: subManuActive === "Visa" ? "var(--white)" : "",
                   }}
                   onClick={() => {
                     setSubMenuActive("Visa");
@@ -382,10 +366,10 @@ const UserDashboardSideBar = () => {
                 </NavLink>
               </Box>
             </Box>
-          </Box> */}
+          </Box>
 
           {/* search */}
-          {/* <ListItem disablePadding sx={{ display: "block" }}>
+          <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
               to="/abc"
               className={({ isActive }) =>
@@ -415,7 +399,7 @@ const UserDashboardSideBar = () => {
                     style={{
                       fontSize: "28px",
                       margin: "10px 0px",
-                      color: "var(--primary-color)",
+                      color: "var(--white)",
                     }}
                   />
                 </ListItemIcon>
@@ -424,15 +408,15 @@ const UserDashboardSideBar = () => {
                   primary="Search"
                   sx={{
                     opacity: open ? 1 : 0,
-                    color: "var(--primary-color)",
+                    color: "var(--white)",
                   }}
                 />
               </ListItemButton>
             </NavLink>
-          </ListItem> */}
+          </ListItem>
 
           {/* Agent */}
-          {/* <ListItem disablePadding sx={{ display: "block" }}>
+          <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
               to="/dhgf"
               className={({ isActive }) =>
@@ -462,7 +446,7 @@ const UserDashboardSideBar = () => {
                     style={{
                       fontSize: "28px",
                       margin: "10px 0px",
-                      color: "var(--primary-color)",
+                      color: "var(--white)",
                     }}
                   />
                 </ListItemIcon>
@@ -471,15 +455,15 @@ const UserDashboardSideBar = () => {
                   primary="Agent"
                   sx={{
                     opacity: open ? 1 : 0,
-                    color: "var(--primary-color)",
+                    color: "var(--white)",
                   }}
                 />
               </ListItemButton>
             </NavLink>
-          </ListItem> */}
+          </ListItem>
 
           {/* Booking  */}
-          {/* <Box>
+          <Box>
             <ListItem disablePadding sx={{ display: "block" }}>
               <NavLink
                 to={"/dashboardhome/queues"}
@@ -514,7 +498,7 @@ const UserDashboardSideBar = () => {
                       style={{
                         fontSize: "28px",
                         margin: "10px 0px",
-                        color: "var(--primary-color)",
+                        color: "var(--white)",
                       }}
                     />
                   </ListItemIcon>
@@ -523,7 +507,7 @@ const UserDashboardSideBar = () => {
                     primary="Booking"
                     sx={{
                       opacity: open ? 1 : 0,
-                      color: "var(--primary-color)",
+                      color: "var(--white)",
                     }}
                   />
                 </ListItemButton>
@@ -532,7 +516,7 @@ const UserDashboardSideBar = () => {
             <Box
               style={{
                 display: subManu === "Booking" ? "" : "none",
-                background: open ? "var(--primary-color)" : "",
+                background: open ? "var(--secondary-color)" : "",
               }}
               className="admin-DashSubManu"
             >
@@ -630,7 +614,7 @@ const UserDashboardSideBar = () => {
                 </NavLink>
               </Box>
             </Box>
-          </Box> */}
+          </Box>
 
           {/* Payment */}
           {/* <ListItem disablePadding sx={{ display: "block" }}>

@@ -43,7 +43,7 @@ import AdminAccount from "./components/Account/AdminAccount";
 import Test from "./Test";
 import { Box } from "@mui/material";
 import "./App.css";
-import AdminDashboardSideBar from "./components/DashboardSideBar/AdminDashboardSideBar";
+import AdminDashboardSideBar from "./components/AdminDashboardSideBar/AdminDashboardSideBar";
 import UserDashboardSideBar from "./components/UserDashboardSideBar/UserDashboardSideBar";
 
 function App() {
@@ -99,10 +99,9 @@ function App() {
             {/* admin dashboard sidebar route end here  */}
 
             {/* user dashboard sidebar route start here  */}
-            <Route
-              path="/userdashboardhome"
-              element={<UserDashboardSideBar />}
-            ></Route>
+            <Route path="/userdashboardhome" element={<UserDashboardSideBar />}>
+              <Route path="/userdashboardhome/mystaff" element={<MyStaff />} />
+            </Route>
 
             {/* user dashboard sidebar route start here  */}
 
