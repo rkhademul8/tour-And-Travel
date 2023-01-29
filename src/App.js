@@ -55,44 +55,25 @@ function App() {
           <Routes>
             <Route path="/test" element={<Test />} />
 
+            <Route path="/admin" element={<AdminLogin />} />
+
             {/* admin dashboard sidebar route start here  */}
-            <Route path="/dashboardhome" element={<AdminDashboardSideBar />}>
-              <Route path="/dashboardhome/dashboard" element={<Dashboard />} />
+            <Route path="/admin" element={<AdminDashboardSideBar />}>
+              <Route path="/admin/dashboard" element={<Dashboard />} />
+              <Route path="/admin/queues" element={<Queues />} />
+              <Route path="/admin/queuesdetails" element={<QueuesDetail />} />
+              <Route path="/admin/cancelqueues" element={<CancelQueues />} />
+              <Route path="/admin/traveller" element={<Traveller />} />
+              <Route path="/admin/addtraveller" element={<AddTraveller />} />
 
-              <Route path="/dashboardhome/queues" element={<Queues />} />
+              <Route path="/admin/deposite" element={<Deposite />} />
+              <Route path="/admin/adddeposite" element={<AddDeposite />} />
               <Route
-                path="/dashboardhome/queuesdetails"
-                element={<QueuesDetail />}
-              />
-              <Route
-                path="/dashboardhome/cancelqueues"
-                element={<CancelQueues />}
-              />
-              <Route path="/dashboardhome/traveller" element={<Traveller />} />
-              <Route
-                path="/dashboardhome/addtraveller"
-                element={<AddTraveller />}
-              />
-
-              <Route path="/dashboardhome/deposite" element={<Deposite />} />
-              <Route
-                path="/dashboardhome/adddeposite"
-                element={<AddDeposite />}
-              />
-              <Route
-                path="/dashboardhome/admin/addbank"
-                element={<AdminAddBank />}
-              />
-              <Route
-                path="/dashboardhome/admin/account"
-                element={<AdminAccount />}
-              />
-              <Route
-                path="/dashboardhome/generalledger"
+                path="/admin/generalledger"
                 element={<GeneralLedgerRoute />}
               />
               <Route
-                path="/dashboardhome/generalLedgerReport"
+                path="/admin/generalLedgerReport"
                 element={<GeneralLedgerReport />}
               />
             </Route>
@@ -107,6 +88,15 @@ function App() {
 
             {/* //todo:home page */}
             <Route path="/" element={<Home />} />
+
+            <Route
+              path="/dashboardhome/admin/addbank"
+              element={<AdminAddBank />}
+            />
+            <Route
+              path="/dashboardhome/admin/account"
+              element={<AdminAccount />}
+            />
 
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
@@ -292,7 +282,7 @@ function App() {
             /> */}
 
             {/* //todo:admin route */}
-            <Route path="/admin" element={<AdminLogin />} />
+
             <Route
               path="/admin/dashboard"
               element={

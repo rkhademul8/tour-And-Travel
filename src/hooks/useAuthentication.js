@@ -1,4 +1,6 @@
-import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { useQuery } from "react-query";
 import { useNavigate } from "react-router-dom";
 import secureLocalStorage from "react-secure-storage";
 
@@ -6,7 +8,7 @@ const useAuthentication = () => {
   const navigate = useNavigate();
   const [error, setError] = useState("");
   const [isLoading, setIsLoading] = useState(true);
-
+  const [agentId, setAgentId] = useState("");
   const [websitelink, setWebsitelink] = useState("");
   useEffect(() => {
     let url = `https://api.flyfarint.com/v.1.0.0/WhiteLabel/MyAccount/all.php?website=${window.location.hostname.replace(
@@ -18,10 +20,11 @@ const useAuthentication = () => {
       .then((res) => res.json())
       .then((data) => {
         setWebsitelink(data?.websitelink);
+        setAgentId(data?.agentId);
       });
   }, []);
 
-  //  user login
+  //  sub Agent login
   const loginUser = (loginData, location, navigate) => {
     setIsLoading(false);
     secureLocalStorage.setItem("state", loginData);
@@ -30,8 +33,9 @@ const useAuthentication = () => {
       email: loginData.email.trim(),
       password: loginData.password.trim(),
       websitelink: websitelink.trim(),
+      agentId,
     });
-    console.log(body);
+    // console.log(body);
     fetch(url, {
       method: "POST",
       headers: {
@@ -46,11 +50,12 @@ const useAuthentication = () => {
         setIsLoading(true);
         if (data.status === "success") {
           secureLocalStorage.setItem("user-info", data);
-          const destination = location?.state?.from || "/";
+          const destination =
+            location?.state?.from || "/userdashboardhome/mystaff";
           navigate(destination);
         } else {
           secureLocalStorage.removeItem("user-info");
-          console.log(data.message);
+          // console.log(data.message);
           setError(data.message);
         }
       })
@@ -82,11 +87,11 @@ const useAuthentication = () => {
         setIsLoading(true);
         if (data.status === "success") {
           secureLocalStorage.setItem("admin-info", data);
-          const destination = location?.state?.from || "/dashboardhome/dashboard";
+          const destination = location?.state?.from || "/admin/dashboard";
           navigate(destination);
         } else {
           secureLocalStorage.removeItem("admin-info");
-          console.log(data.message);
+          // console.log(data.message);
           setError(data.message);
         }
       })

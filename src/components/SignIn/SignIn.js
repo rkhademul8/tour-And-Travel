@@ -76,6 +76,7 @@ const SignIn = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    loginUser(loginData, location, navigate);
     e.target.reset();
   };
 
@@ -107,76 +108,90 @@ const SignIn = () => {
               fontWeight: "600",
             }}
           >
-            <span style={{ color: "var(--secondary-color)" }}>Ticket</span>
+            <span style={{ color: "var(--secondary-color)" }}>Travel</span>
             Factory
           </Typography>
         </Box>
-      </Container>
-
-      <Box
-        sx={{
-          width: "100vw",
-          height: "fit-content",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Box>
-          <Box sx={{ textAlign: "center" }}>
-            <form onSubmit={handleSubmit}>
-              <Box mb={2}>
-                <Typography
-                  style={{
-                    color: "var(--black)",
-                    fontSize: "30px",
-                    fontWeight: "bold",
+        <Box
+          sx={{
+            width: { md: "50%" },
+            margin: "20px auto",
+          }}
+        >
+          <form onSubmit={handleSubmit}>
+            <Grid container rowGap="10px">
+              <Grid item md={12} sm={12} xs={12}>
+                <Box
+                  my={2}
+                  sx={{
+                    width: "100%",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
                   }}
                 >
-                  Sign In
-                </Typography>
-              </Box>
-              <input
-                className="email"
-                placeholder="Enter Your Email"
-                value={loginData.email}
-                name="email"
-                type="email"
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                onChange={handleOnChange}
-                sx={{
-                  width: "100%",
-                  borderRadius: "3px",
-                }}
-              />
-              <br></br>
-              <br></br>
-              <FormControl>
-                <Box
-                  position={"relative"}
-                  display="flex"
-                  justifyContent={"flex-end"}
-                  alignItems="center"
-                >
+                  <Typography
+                    style={{
+                      color: "var(--secondary-color)",
+                      fontSize: "30px",
+                      fontWeight: "bold",
+                      textTransform: "uppercase",
+                    }}
+                  >
+                    Sign In
+                  </Typography>
+                </Box>
+              </Grid>
+              <Grid item md={12} sm={12} xs={12}>
+                <input
+                  placeholder="Enter Your Email"
+                  value={loginData.email}
+                  name="email"
+                  type="email"
+                  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                  onChange={handleOnChange}
+                  style={{
+                    height: "40px",
+                    width: "calc(100% - 20px)",
+                    border: "none",
+                    outline: "none",
+                    borderRadius: "5px",
+                    padding: "0px 10px",
+                    color: "var(--secondary-color)",
+                    backgroundColor: "rgba(var(--primary-rgb),0.4)",
+                    fontSize: "16px",
+                  }}
+                />
+              </Grid>
+              <Grid item md={12} sm={12} xs={12}>
+                <Box sx={{ position: "relative" }}>
                   <input
-                    className="email"
                     placeholder="Enter Your Password"
                     required
                     name="password"
-                    id="password-label"
                     value={loginData.password}
                     type={showPassword ? "text" : "password"}
                     onChange={handleOnChange}
-                    sx={{
-                      width: "460px",
-                      borderRadius: "3px",
+                    style={{
+                      height: "40px",
+                      width: "calc(100% - 20px)",
+                      border: "none",
+                      outline: "none",
+                      borderRadius: "5px",
+                      padding: "0px 10px",
+                      color: "var(--secondary-color)",
+                      backgroundColor: "rgba(var(--primary-rgb),0.4)",
+                      fontSize: "16px",
                     }}
                   />
                   <Box
-                    position={"absolute"}
                     onClick={handleClickShowPassword}
-                    mt="7px"
-                    mr="5px"
+                    sx={{
+                      position: "absolute",
+                      top: "50%",
+                      right: "5px",
+                      transform: "translate(0,-50%)",
+                    }}
                   >
                     {showPassword ? (
                       <Visibility className="fonticon09" />
@@ -185,24 +200,22 @@ const SignIn = () => {
                     )}
                   </Box>
                 </Box>
-              </FormControl>
-              <br />
-              <Box className="pass-forget">
-                <Box margin="5px 1px 0px 1px" fontSize={"8px"}>
-                  <FormGroup>
-                    <FormControlLabel
-                      sx={{ color: "var(--primary-color)" }}
-                      control={
-                        rememberUser?.isChecked === true ? (
-                          <Checkbox defaultChecked onChange={handleCheckBox} />
-                        ) : (
-                          <Checkbox onChange={handleCheckBox} />
-                        )
-                      }
-                      label="Remember"
-                    />
-                  </FormGroup>
-                </Box>
+              </Grid>
+              <Grid item md={12} sm={12} xs={12}>
+                <FormGroup>
+                  <FormControlLabel
+                    control={
+                      rememberUser?.isChecked === true ? (
+                        <Checkbox defaultChecked onChange={handleCheckBox} />
+                      ) : (
+                        <Checkbox onChange={handleCheckBox} />
+                      )
+                    }
+                    label="Remember"
+                  />
+                </FormGroup>
+              </Grid>
+              <Grid item md={12} sm={12} xs={12}>
                 <Box>
                   <NavLink
                     style={{ textDecoration: "none" }}
@@ -212,27 +225,28 @@ const SignIn = () => {
                       style={{
                         color: "var(--primary-color)",
                         fontSize: "16px",
+                        width: "100%",
+                        textAlign: "left",
                       }}
                     >
                       Forget Password ?
                     </Typography>
                   </NavLink>
                 </Box>
-              </Box>
-              <br></br>
-              <Box className="login-btn">
+              </Grid>
+              <Grid item md={12} sm={12} xs={12}>
                 <Button
                   type="submit"
-                  onClick={() => {
-                    loginUser(loginData, location, navigate);
-                    adminLogin(loginData, location, navigate);
-                  }}
                   disabled={!isLoading ? true : false}
-                  style={{
+                  sx={{
                     width: "100%",
-                    height: "35px",
+                    height: "40px",
                     background: "var(--primary-color)",
                     color: "var(--white)",
+                    "&:hover": {
+                      background: "var(--primary-color)",
+                      color: "var(--white)",
+                    },
                   }}
                 >
                   {isLoading ? (
@@ -246,43 +260,42 @@ const SignIn = () => {
                     />
                   )}
                 </Button>
-              </Box>
-            </form>
-          </Box>
-          <Box mt={1}>
-            <h5>
+              </Grid>
+            </Grid>
+            <Box mt={1}>
               <Box>
-                {error && (
-                  <Alert
-                    severity="error"
-                    style={{
-                      margin: "0px",
-                      padding: "0px",
+                <Box>
+                  {error && (
+                    <Alert
+                      severity="error"
+                      style={{
+                        margin: "0px",
+                        padding: "0px",
+                      }}
+                    >
+                      <AlertTitle color="red" m={0} p={0}>
+                        Error !
+                      </AlertTitle>{" "}
+                      <strong textAlign={"center"}>{error} !</strong>
+                    </Alert>
+                  )}
+                </Box>
+                <Typography style={{ color: "var(--primary-color)" }}>
+                  Don't have an account?
+                  <Button
+                    onClick={() => {
+                      navigate("/signup");
                     }}
+                    style={{ color: "var(--secondary-color)" }}
                   >
-                    <AlertTitle color="red" m={0} p={0}>
-                      Error !
-                    </AlertTitle>{" "}
-                    <strong textAlign={"center"}>{error} !</strong>
-                  </Alert>
-                )}
+                    Register Now
+                  </Button>
+                </Typography>
               </Box>
-              <Typography style={{ color: "var(--primary-color)" }}>
-                Don't have an account?
-                <Button
-                  onClick={() => {
-                    navigate("/signup");
-                  }}
-                  style={{ color: "var(--secondary-color)" }}
-                >
-                  Register Now
-                </Button>
-              </Typography>
-            </h5>
-          </Box>
+            </Box>
+          </form>
         </Box>
-      </Box>
-
+      </Container>
       <Footer />
     </Box>
   );

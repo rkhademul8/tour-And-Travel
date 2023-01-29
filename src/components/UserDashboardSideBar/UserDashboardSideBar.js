@@ -210,7 +210,7 @@ const UserDashboardSideBar = () => {
           <Box>
             <ListItem disablePadding sx={{ display: "block" }}>
               <NavLink
-                to={"/userdashboardhome/mystaff"}
+                to={"/"}
                 className={({ isActive }) =>
                   isActive ? "active-nav" : "normal-nav"
                 }
@@ -466,7 +466,7 @@ const UserDashboardSideBar = () => {
           <Box>
             <ListItem disablePadding sx={{ display: "block" }}>
               <NavLink
-                to={"/dashboardhome/queues"}
+                to={"/userdashboardhome/mystaff"}
                 className={({ isActive }) =>
                   isActive ? "active-nav" : "normal-nav"
                 }
@@ -529,7 +529,7 @@ const UserDashboardSideBar = () => {
                     display: "block",
                     background:
                       subManuActive === "HomeContent"
-                        ? "var(--secondary-color)"
+                        ? "var(--primary-color)"
                         : "",
                     color:
                       subManuActive === "HomeContent" ? "var(--white)" : "",
@@ -545,7 +545,7 @@ const UserDashboardSideBar = () => {
                     display: "block",
                     background:
                       subManuActive === "GroupFare"
-                        ? "var( --secondary-color)"
+                        ? "var(--primary-color)"
                         : "",
                     color: subManuActive === "GroupFare" ? "var(--white)" : "",
                   }}
@@ -559,9 +559,7 @@ const UserDashboardSideBar = () => {
                   style={{
                     display: "block",
                     background:
-                      subManuActive === "Umrah"
-                        ? "var( --secondary-color)"
-                        : "",
+                      subManuActive === "Umrah" ? "var(--primary-color)" : "",
                     color: subManuActive === "Umrah" ? "var(--white)" : "",
                   }}
                   onClick={() => {
@@ -574,7 +572,7 @@ const UserDashboardSideBar = () => {
                   style={{
                     display: "block",
                     background:
-                      subManuActive === "Tour" ? "var( --secondary-color)" : "",
+                      subManuActive === "Tour" ? "var(--primary-color)" : "",
                     color: subManuActive === "Tour" ? "var(--white)" : "",
                   }}
                   onClick={() => {
@@ -587,9 +585,7 @@ const UserDashboardSideBar = () => {
                   style={{
                     display: "block",
                     background:
-                      subManuActive === "Others"
-                        ? "var( --secondary-color)"
-                        : "",
+                      subManuActive === "Others" ? "var(--primary-color)" : "",
                     color: subManuActive === "Others" ? "var(--white)" : "",
                   }}
                   onClick={() => {
@@ -603,7 +599,7 @@ const UserDashboardSideBar = () => {
                   style={{
                     display: "block",
                     background:
-                      subManuActive === "Visa" ? "var( --secondary-color)" : "",
+                      subManuActive === "Visa" ? "var(--primary-color)" : "",
                     color: subManuActive === "Visa" ? "var(--white)" : "",
                   }}
                   onClick={() => {
@@ -617,7 +613,7 @@ const UserDashboardSideBar = () => {
           </Box>
 
           {/* Payment */}
-          {/* <ListItem disablePadding sx={{ display: "block" }}>
+          <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
               to="/dashboardhome/admin/addbank"
               className={({ isActive }) =>
@@ -647,7 +643,7 @@ const UserDashboardSideBar = () => {
                     style={{
                       fontSize: "28px",
                       margin: "10px 0px",
-                      color: "var(--primary-color)",
+                      color: "var(--white)",
                     }}
                   />
                 </ListItemIcon>
@@ -656,15 +652,15 @@ const UserDashboardSideBar = () => {
                   primary="Payment"
                   sx={{
                     opacity: open ? 1 : 0,
-                    color: "var(--primary-color)",
+                    color: "var(--white)",
                   }}
                 />
               </ListItemButton>
             </NavLink>
-          </ListItem> */}
+          </ListItem>
 
           {/* Account */}
-          {/* <ListItem disablePadding sx={{ display: "block" }}>
+          <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
               to="/dashboardhome/admin/account"
               className={({ isActive }) =>
@@ -694,7 +690,7 @@ const UserDashboardSideBar = () => {
                     style={{
                       fontSize: "26px",
                       margin: "10px 0px",
-                      color: "var(--primary-color)",
+                      color: "var(--white)",
                     }}
                   />
                 </ListItemIcon>
@@ -703,15 +699,15 @@ const UserDashboardSideBar = () => {
                   primary="Account"
                   sx={{
                     opacity: open ? 1 : 0,
-                    color: "var(--primary-color)",
+                    color: "var(--white)",
                   }}
                 />
               </ListItemButton>
             </NavLink>
-          </ListItem> */}
+          </ListItem>
 
           {/* logout */}
-          {/* <ListItem disablePadding sx={{ display: "block" }}>
+          <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
               className={({ isActive }) =>
                 isActive ? "active-nav" : "normal-nav"
@@ -743,7 +739,7 @@ const UserDashboardSideBar = () => {
                     style={{
                       fontSize: "28px",
                       margin: "10px 0px",
-                      color: "var(--primary-color)",
+                      color: "var(--white)",
                     }}
                   />
                 </ListItemIcon>
@@ -752,12 +748,12 @@ const UserDashboardSideBar = () => {
                   primary="Logout"
                   sx={{
                     opacity: open ? 1 : 0,
-                    color: "var(--primary-color)",
+                    color: "var(--white)",
                   }}
                 />
               </ListItemButton>
             </NavLink>
-          </ListItem> */}
+          </ListItem>
         </List>
       </Drawer>
 

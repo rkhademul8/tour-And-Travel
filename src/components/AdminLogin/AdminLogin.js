@@ -61,6 +61,7 @@ const AdminLogin = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    adminLogin(loginData, location, navigate);
     e.target.reset();
   };
 
@@ -220,9 +221,6 @@ const AdminLogin = () => {
               <Grid item md={12} sm={12} xs={12}>
                 <Button
                   type="submit"
-                  onClick={() => {
-                    adminLogin(loginData, location, navigate);
-                  }}
                   disabled={!isLoading ? true : false}
                   sx={{
                     width: "100%",
