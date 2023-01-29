@@ -38,7 +38,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "../../App";
 import { borderRadius, color, width } from "@mui/system";
 import useAuthentication from "../../hooks/useAuthentication";
-import "./AdminDashboardSideBar.css";
+import "./UserDashboardSideBar.css";
 
 const drawerWidth = 230;
 
@@ -107,7 +107,7 @@ const Drawer = styled(MuiDrawer, {
   }),
 }));
 
-const AdminDashboardSideBar = () => {
+const UserDashboardSideBar = () => {
   const theme = useTheme();
   const [open, setOpen] = useState(false);
 
@@ -141,7 +141,7 @@ const AdminDashboardSideBar = () => {
           <Box onClick={() => setOpen(!open)}>
             <MenuIcon
               style={{
-                color: "var(--primary-color)",
+                color: "var(--white)",
                 fontSize: "28px",
                 margin: "20px 15px 10px 15px",
               }}
@@ -164,7 +164,7 @@ const AdminDashboardSideBar = () => {
             <NavLink
               to="/dashboardhome/dashboard"
               className={({ isActive }) =>
-                isActive ? "admin-active-nav" : "admin-normal-nav"
+                isActive ? "active-nav" : "normal-nav"
               }
               onClick={() => setSubmenu("Dashboard")}
             >
@@ -190,7 +190,7 @@ const AdminDashboardSideBar = () => {
                     style={{
                       fontSize: "28px",
                       margin: "10px 0px",
-                      color: "var(--primary-color)",
+                      color: "var(--white)",
                     }}
                   />
                 </ListItemIcon>
@@ -199,7 +199,7 @@ const AdminDashboardSideBar = () => {
                   primary="Dashboard"
                   sx={{
                     opacity: open ? 1 : 0,
-                    color: "var(--primary-color)",
+                    color: "var(--white)",
                   }}
                 />
               </ListItemButton>
@@ -207,7 +207,7 @@ const AdminDashboardSideBar = () => {
           </ListItem>
 
           {/* manage  */}
-          <Box>
+          {/* <Box>
             <ListItem disablePadding sx={{ display: "block" }}>
               <NavLink
                 to={"/dashboardhome/traveller"}
@@ -262,9 +262,12 @@ const AdminDashboardSideBar = () => {
                 display: subManu === "Manage" ? "" : "none",
                 background: open ? "var(--primary-color)" : "",
               }}
-              className="DashSubManu"
+              className="admin-DashSubManu"
             >
-              <Box className="DashSubManuChild" sx={{ opacity: open ? 1 : 0 }}>
+              <Box
+                className="admin-DashSubManuChild"
+                sx={{ opacity: open ? 1 : 0 }}
+              >
                 <NavLink
                   style={{
                     display: "block",
@@ -379,10 +382,10 @@ const AdminDashboardSideBar = () => {
                 </NavLink>
               </Box>
             </Box>
-          </Box>
+          </Box> */}
 
           {/* search */}
-          <ListItem disablePadding sx={{ display: "block" }}>
+          {/* <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
               to="/abc"
               className={({ isActive }) =>
@@ -426,10 +429,10 @@ const AdminDashboardSideBar = () => {
                 />
               </ListItemButton>
             </NavLink>
-          </ListItem>
+          </ListItem> */}
 
           {/* Agent */}
-          <ListItem disablePadding sx={{ display: "block" }}>
+          {/* <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
               to="/dhgf"
               className={({ isActive }) =>
@@ -473,10 +476,10 @@ const AdminDashboardSideBar = () => {
                 />
               </ListItemButton>
             </NavLink>
-          </ListItem>
+          </ListItem> */}
 
           {/* Booking  */}
-          <Box>
+          {/* <Box>
             <ListItem disablePadding sx={{ display: "block" }}>
               <NavLink
                 to={"/dashboardhome/queues"}
@@ -531,9 +534,12 @@ const AdminDashboardSideBar = () => {
                 display: subManu === "Booking" ? "" : "none",
                 background: open ? "var(--primary-color)" : "",
               }}
-              className="DashSubManu"
+              className="admin-DashSubManu"
             >
-              <Box className="DashSubManuChild" sx={{ opacity: open ? 1 : 0 }}>
+              <Box
+                className="admin-DashSubManuChild"
+                sx={{ opacity: open ? 1 : 0 }}
+              >
                 <NavLink
                   style={{
                     display: "block",
@@ -624,10 +630,10 @@ const AdminDashboardSideBar = () => {
                 </NavLink>
               </Box>
             </Box>
-          </Box>
+          </Box> */}
 
           {/* Payment */}
-          <ListItem disablePadding sx={{ display: "block" }}>
+          {/* <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
               to="/dashboardhome/admin/addbank"
               className={({ isActive }) =>
@@ -671,10 +677,10 @@ const AdminDashboardSideBar = () => {
                 />
               </ListItemButton>
             </NavLink>
-          </ListItem>
+          </ListItem> */}
 
           {/* Account */}
-          <ListItem disablePadding sx={{ display: "block" }}>
+          {/* <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
               to="/dashboardhome/admin/account"
               className={({ isActive }) =>
@@ -718,10 +724,10 @@ const AdminDashboardSideBar = () => {
                 />
               </ListItemButton>
             </NavLink>
-          </ListItem>
+          </ListItem> */}
 
           {/* logout */}
-          <ListItem disablePadding sx={{ display: "block" }}>
+          {/* <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
               className={({ isActive }) =>
                 isActive ? "active-nav" : "normal-nav"
@@ -767,7 +773,7 @@ const AdminDashboardSideBar = () => {
                 />
               </ListItemButton>
             </NavLink>
-          </ListItem>
+          </ListItem> */}
         </List>
       </Drawer>
 
@@ -778,4 +784,4 @@ const AdminDashboardSideBar = () => {
   );
 };
 
-export default AdminDashboardSideBar;
+export default UserDashboardSideBar;

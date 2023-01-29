@@ -44,6 +44,7 @@ import Test from "./Test";
 import { Box } from "@mui/material";
 import "./App.css";
 import AdminDashboardSideBar from "./components/DashboardSideBar/AdminDashboardSideBar";
+import UserDashboardSideBar from "./components/UserDashboardSideBar/UserDashboardSideBar";
 
 function App() {
   return (
@@ -98,10 +99,12 @@ function App() {
             {/* admin dashboard sidebar route end here  */}
 
             {/* user dashboard sidebar route start here  */}
+            <Route
+              path="/userdashboardhome"
+              element={<UserDashboardSideBar />}
+            ></Route>
 
             {/* user dashboard sidebar route start here  */}
-
-            {/*  */}
 
             {/* //todo:home page */}
             <Route path="/" element={<Home />} />
