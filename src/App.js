@@ -57,27 +57,18 @@ function App() {
 
             <Route path="/admin" element={<AdminLogin />} />
 
-            {/* admin dashboard sidebar route start here  */}
+
+            {/* admin sidebar */}
             <Route path="/admin" element={<AdminDashboardSideBar />}>
               <Route path="/admin/dashboard" element={<Dashboard />} />
-              <Route path="/admin/queues" element={<Queues />} />
-              <Route path="/admin/queuesdetails" element={<QueuesDetail />} />
-              <Route path="/admin/cancelqueues" element={<CancelQueues />} />
-              <Route path="/admin/traveller" element={<Traveller />} />
-              <Route path="/admin/addtraveller" element={<AddTraveller />} />
-
-              <Route path="/admin/deposite" element={<Deposite />} />
-              <Route path="/admin/adddeposite" element={<AddDeposite />} />
-              <Route
-                path="/admin/generalledger"
-                element={<GeneralLedgerRoute />}
-              />
-              <Route
-                path="/admin/generalLedgerReport"
-                element={<GeneralLedgerReport />}
-              />
             </Route>
-            {/* admin dashboard sidebar route end here  */}
+
+
+
+
+
+
+
 
             {/* user dashboard sidebar route start here  */}
             <Route path="/userdashboardhome" element={<UserDashboardSideBar />}>

@@ -159,10 +159,9 @@ const AdminDashboardSideBar = () => {
           }}
         >
           {/* dashboard  home */}
-
           <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
-              to="/dashboardhome/dashboard"
+              to="/admin/dashboard"
               className={({ isActive }) =>
                 isActive ? "active-nav" : "normal-nav"
               }

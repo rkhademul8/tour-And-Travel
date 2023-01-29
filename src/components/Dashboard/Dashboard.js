@@ -7,7 +7,7 @@ import "./Dashboard.css";
 const Dashboard = () => {
   return (
     <Box style={{ marginTop: "50px" }}>
-      {/* <HomeSearchBox /> */}
+      <HomeSearchBox />
       <FullScreenSlider />
     </Box>
   );
