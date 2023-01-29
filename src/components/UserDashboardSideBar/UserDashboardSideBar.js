@@ -262,10 +262,10 @@ const UserDashboardSideBar = () => {
                 display: subManu === "Manage" ? "" : "none",
                 background: open ? "var(--secondary-color)" : "",
               }}
-              className="admin-DashSubManu"
+              className="user-DashSubManu"
             >
               <Box
-                className="admin-DashSubManuChild"
+                className="user-DashSubManuChild"
                 sx={{ opacity: open ? 1 : 0 }}
               >
                 <NavLink
@@ -518,10 +518,10 @@ const UserDashboardSideBar = () => {
                 display: subManu === "Booking" ? "" : "none",
                 background: open ? "var(--secondary-color)" : "",
               }}
-              className="admin-DashSubManu"
+              className="user-DashSubManu"
             >
               <Box
-                className="admin-DashSubManuChild"
+                className="user-DashSubManuChild"
                 sx={{ opacity: open ? 1 : 0 }}
               >
                 <NavLink

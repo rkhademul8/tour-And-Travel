@@ -20,7 +20,6 @@ import MyStaff from "./components/Admin/MyAccount/MyStaff";
 import GeneralLedgerRoute from "./pages/General Ledger/GeneralLedgerRoute";
 import GeneralLedgerReport from "./components/GeneralLedger/GeneralLedgerReport";
 import SearchCountParent from "./components/SearchCountComponent/SearchCountParent/SearchCountParent";
-import AgentManagement from "./pages/AgentManagement/AgentManagement";
 import PaymentManagement from "./pages/PaymentManagement/PaymentManagement";
 import AddStaff from "./components/Admin/MyAccount/AddStaff";
 import Admin from "./pages/Admin/Admin";
@@ -45,6 +44,8 @@ import { Box } from "@mui/material";
 import "./App.css";
 import AdminDashboardSideBar from "./components/AdminDashboardSideBar/AdminDashboardSideBar";
 import UserDashboardSideBar from "./components/UserDashboardSideBar/UserDashboardSideBar";
+import ControlPanel from "./components/ControlPanel/ControlPanel";
+import AgentManagement from "./pages/AgentManagement/AgentManagement";
 
 function App() {
   return (
@@ -57,18 +58,19 @@ function App() {
 
             <Route path="/admin" element={<AdminLogin />} />
 
-
             {/* admin sidebar */}
             <Route path="/admin" element={<AdminDashboardSideBar />}>
               <Route path="/admin/dashboard" element={<Dashboard />} />
+              <Route path="/admin/controlpanel" element={<ControlPanel />} />
+              <Route
+                path="/admin/searchcount"
+                element={<SearchCountParent />}
+              />
+              <Route
+                path="/admin/agentmanagement"
+                element={<AgentManagement />}
+              />
             </Route>
-
-
-
-
-
-
-
 
             {/* user dashboard sidebar route start here  */}
             <Route path="/userdashboardhome" element={<UserDashboardSideBar />}>
@@ -92,14 +94,7 @@ function App() {
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
 
-            <Route
-              path="/searchresult"
-              element={
-                <PrivateRoute>
-                  <SearchResult />
-                </PrivateRoute>
-              }
-            />
+            <Route path="/searchresult" element={<SearchResult />} />
 
             <Route
               path="/roundsearchresult"
@@ -282,10 +277,7 @@ function App() {
                 </PrivateRoute>
               }
             />
-            <Route
-              path="/admin/agentManagement"
-              element={<AgentManagement />}
-            />
+
             <Route path="/admin/bookingManagement" element={<BookingRoute />} />
             <Route
               path="/admin/paymentManagement"

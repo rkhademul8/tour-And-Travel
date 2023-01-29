@@ -209,7 +209,7 @@ const AdminDashboardSideBar = () => {
           <Box>
             <ListItem disablePadding sx={{ display: "block" }}>
               <NavLink
-                to={"/dashboardhome/traveller"}
+                to={"/admin/controlpanel"}
                 className={({ isActive }) =>
                   isActive ? "active-nav" : "normal-nav"
                 }
@@ -268,6 +268,7 @@ const AdminDashboardSideBar = () => {
                 sx={{ opacity: open ? 1 : 0 }}
               >
                 <NavLink
+                  to={"/admin/controlpanel"}
                   style={{
                     display: "block",
                     background:
@@ -386,7 +387,7 @@ const AdminDashboardSideBar = () => {
           {/* search */}
           <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
-              to="/abc"
+              to="/admin/searchcount"
               className={({ isActive }) =>
                 isActive ? "active-nav" : "normal-nav"
               }
@@ -433,7 +434,7 @@ const AdminDashboardSideBar = () => {
           {/* Agent */}
           <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
-              to="/dhgf"
+              to="/admin/agentmanagement"
               className={({ isActive }) =>
                 isActive ? "active-nav" : "normal-nav"
               }

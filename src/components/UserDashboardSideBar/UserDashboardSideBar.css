@@ -17,19 +17,19 @@
   color: var(--primary-color) !important;
 }
 
-.admin-DashSubManu {
+.user-DashSubManu {
   padding-bottom: 20px;
   width: 90%;
   border-bottom-right-radius: 5px;
 }
 
-.admin-DashSubManuChild {
+.user-DashSubManuChild {
   border-left: 3px solid var(--primary-color);
   width: 65%;
   margin: auto;
 }
 
-.admin-DashSubManuChild a {
+.user-DashSubManuChild a {
   text-decoration: none;
   display: block;
   padding: 2px 10px;
@@ -40,7 +40,7 @@
   font-size: 14px;
 }
 
-.admin-DashSubManu a:hover {
+.user-DashSubManu a:hover {
   background-color: var(--primary-color);
   color: var(--white);
 }

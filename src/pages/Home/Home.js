@@ -5,7 +5,7 @@ import FullScreenSlider from "../../components/FullScreenSlider/FullScreenSlider
 import Header from "../../components/Header/Header";
 import HomeSearchBox from "../../components/HomeSearchBox/HomeSearchBox";
 import { RecentSearch } from "../../components/RecentSearch/RecentSearch";
-import { TrendingDeals } from "../../components/TrendingDeals/TrendingDeals";
+// import { TrendingDeals } from "../../components/TrendingDeals/TrendingDeals";
 import bgImg from "../../images/SliderImg/s6.png";
 import "./home.css";
 import HotDeals from "../../components/HotDeals/HotDeals";
