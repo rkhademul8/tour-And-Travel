@@ -482,7 +482,7 @@ const AdminDashboardSideBar = () => {
           <Box>
             <ListItem disablePadding sx={{ display: "block" }}>
               <NavLink
-                to={"/dashboardhome/queues"}
+                to={"/admin/bookingroute"}
                 className={({ isActive }) =>
                   isActive ? "active-nav" : "normal-nav"
                 }
@@ -541,6 +541,7 @@ const AdminDashboardSideBar = () => {
                 sx={{ opacity: open ? 1 : 0 }}
               >
                 <NavLink
+                  to={"/admin/bookingroute"}
                   style={{
                     display: "block",
                     background:
@@ -554,7 +555,7 @@ const AdminDashboardSideBar = () => {
                     setSubMenuActive("HomeContent");
                   }}
                 >
-                  Home Content
+                  Air Ticket
                 </NavLink>
                 <NavLink
                   style={{
@@ -635,7 +636,7 @@ const AdminDashboardSideBar = () => {
           {/* Payment */}
           <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
-              to="/dashboardhome/admin/addbank"
+              to="/admin/paymentmanagement"
               className={({ isActive }) =>
                 isActive ? "active-nav" : "normal-nav"
               }
@@ -682,7 +683,7 @@ const AdminDashboardSideBar = () => {
           {/* Account */}
           <ListItem disablePadding sx={{ display: "block" }}>
             <NavLink
-              to="/dashboardhome/admin/account"
+              to="/admin/account"
               className={({ isActive }) =>
                 isActive ? "active-nav" : "normal-nav"
               }

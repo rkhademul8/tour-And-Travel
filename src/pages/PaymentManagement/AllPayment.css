@@ -1,0 +1,8 @@
+.saveBtn1 button {
+  cursor: pointer;
+  border: none;
+  padding: 6px 20px;
+  background-color: #70a5d8;
+  color: #fff;
+  border-radius: 2px;
+}

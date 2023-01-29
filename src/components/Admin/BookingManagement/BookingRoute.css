@@ -57,22 +57,16 @@
 .balance-transaction table tr th {
   background-color: var(--secondary-color);
   color: #fff;
-  padding: 8px 0px;
+  padding: 13px 5px;
   font-weight: 300;
   font-size: 12px;
   text-align: center;
 }
 
-.balance-transaction table td,
-th {
-  text-align: left;
-  padding: 8px;
-  text-align: center;
-}
-
 .balance-transaction table td {
-  color: #252733;
+  color: var(--black);
   font-size: 12px;
+  padding: 10px;
 }
 
 .balance-transaction table tr:hover {

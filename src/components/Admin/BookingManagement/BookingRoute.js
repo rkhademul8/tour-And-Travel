@@ -20,17 +20,13 @@ import BookingCancelled from "../BookingPage/BookingCancelled";
 
 const BookingRoute = () => {
   const [optionValue, setOptionValue] = useState("");
-
   const handleChangeOption = (e) => {
     setOptionValue(e.target.value);
   };
 
   return (
     <Box>
-      {/* <Container maxWidth="lg">
-        <Header></Header>
-      </Container> */}
-      <Container maxWidth="lg" style={{ marginTop: "50px" }}>
+      <Container style={{ marginTop: "20px", padding: "0" }}>
         <Grid container justifyContent={"space-between"} alignItems={"center"}>
           <Grid item xs={6} sm={6} md={6}>
             <Typography sx={{ color: "#003566", fontSize: "23px" }} mb={2}>
@@ -51,9 +47,18 @@ const BookingRoute = () => {
             sm={6}
             md={6}
             textAlign="right"
-            className="searchList1-select"
+
+            // className="searchList1-select"
           >
-            <select style={{ width: "30% " }} onChange={handleChangeOption}>
+            <select
+              style={{
+                width: "30%",
+                padding: "8px",
+                outline: "none",
+                border: "1px solid var(--secondary-color)",
+              }}
+              onChange={handleChangeOption}
+            >
               <option value="all">&nbsp;Show All</option>
               <option value="hold">&nbsp;Hold</option>
               <option value="Issue In Processing">&nbsp;Issue Request</option>

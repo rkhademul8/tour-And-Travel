@@ -20,7 +20,6 @@ import MyStaff from "./components/Admin/MyAccount/MyStaff";
 import GeneralLedgerRoute from "./pages/General Ledger/GeneralLedgerRoute";
 import GeneralLedgerReport from "./components/GeneralLedger/GeneralLedgerReport";
 import SearchCountParent from "./components/SearchCountComponent/SearchCountParent/SearchCountParent";
-import PaymentManagement from "./pages/PaymentManagement/PaymentManagement";
 import AddStaff from "./components/Admin/MyAccount/AddStaff";
 import Admin from "./pages/Admin/Admin";
 import SignUp from "./components/SignUp/SignUp";
@@ -46,6 +45,7 @@ import AdminDashboardSideBar from "./components/AdminDashboardSideBar/AdminDashb
 import UserDashboardSideBar from "./components/UserDashboardSideBar/UserDashboardSideBar";
 import ControlPanel from "./components/ControlPanel/ControlPanel";
 import AgentManagement from "./pages/AgentManagement/AgentManagement";
+import PaymentManagement from "./pages/PaymentManagement/PaymentManagement";
 
 function App() {
   return (
@@ -70,6 +70,14 @@ function App() {
                 path="/admin/agentmanagement"
                 element={<AgentManagement />}
               />
+              <Route
+                path="/admin/paymentmanagement"
+                element={<PaymentManagement />}
+              />
+
+              <Route path="/admin/account" element={<AdminAccount />} />
+
+              <Route path="/admin/bookingroute" element={<BookingRoute />} />
             </Route>
 
             {/* user dashboard sidebar route start here  */}
@@ -85,10 +93,6 @@ function App() {
             <Route
               path="/dashboardhome/admin/addbank"
               element={<AdminAddBank />}
-            />
-            <Route
-              path="/dashboardhome/admin/account"
-              element={<AdminAccount />}
             />
 
             <Route path="/signin" element={<SignIn />} />
@@ -157,14 +161,6 @@ function App() {
             />
 
             <Route
-              path="/bookingroute"
-              element={
-                <PrivateRoute>
-                  <BookingRoute />
-                </PrivateRoute>
-              }
-            />
-            <Route
               path="/bookingdetails"
               element={
                 <PrivateRoute>
@@ -222,50 +218,6 @@ function App() {
                 </PrivateRoute>
               }
             />
-            {/* <Route
-              path="/dashboard/queues/cancelqueues"
-              element={<CancelQueues />}
-            />
-            <Route path="/dashboard/queues/others" element={<Others />} />
-            <Route
-              path="/dashboard/queues/queuesdetails"
-              element={<QueuesDetail />}
-            />
-
-            <Route path="/dashboard/queues/onhold" element={<OnHold />} />
-            <Route path="/dashboard/queues/pending" element={<Pending />} />
-            <Route
-              path="/dashboard/queues/InProcess"
-              element={<InProcess />}
-            />
-            <Route
-              path="/dashboard/queues/ticket"
-              element={<Ticketed />}
-            />
-            <Route
-              path="/dashboard/queues/expired"
-              element={<Expired />}
-            />
-            <Route
-              path="/dashboard/queues/cancelled"
-              element={<Cancelled />}
-            />
-            <Route
-              path="/dashboard/queues/unconfirmed"
-              element={<Unconfirmed />}
-            />
-            <Route
-              path="/dashboard/queues/RefundManagement"
-              element={<RefundManagement />}
-            />
-            <Route
-              path="/dashboard/queues/VoidManagement"
-              element={<VoidManagement />}
-            />
-            <Route
-              path="/dashboard/queues/ReissueManagement"
-              element={<ReissueManagement />}
-            /> */}
 
             {/* //todo:admin route */}
 
@@ -278,11 +230,6 @@ function App() {
               }
             />
 
-            <Route path="/admin/bookingManagement" element={<BookingRoute />} />
-            <Route
-              path="/admin/paymentManagement"
-              element={<PaymentManagement />}
-            />
             {/*  //todo:search management section*/}
             <Route
               path="/admin/searchManagement"
