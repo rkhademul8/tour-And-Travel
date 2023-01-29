@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins" !important;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+code {
+  font-family: "Poppins";
+}
+p {
+  font-family: "Poppins" !important;
+}
+
+:root {
+  --primary-color: #2156a6;
+  --primary-rgb: 25, 104, 64;
+  --secondary-color: #f7d800;
+  --secondary-rgb: 34, 34, 34;
+  --third-color: #9c9797;
+  --third-rgb: 156, 151, 151;
+  --white: #ffffff;
+  --red: #ff0000;
+  --gray: #d3e0f0;
+  --white-rgb: 255, 255, 255;
+  --black: #000;
+  --sabre: #ff0000;
+  --galileo: #ffffff;
+  --flyhub: #4169e1;
+  --mateBlack: #222222;
+  --tomato-color: #ff4a4a;
+  --text-greencolor: #496a4d;
+  --dark-greencolor: #0d3a26;
+  --drawer-bgcolor: #f3f5f7;
+  --flight-details-fontcolor: #6a6a6a;
+  --total-text-color: #f60d0d;
+}
+
+button.shine-effect {
+  overflow: hidden;
+}
+
+button.shine-effect::after {
+  content: "";
+  width: 30px;
+  height: 200px;
+  position: absolute;
+  left: -20px;
+  top: 0;
+  margin-top: -20px;
+  background: var(--secondary-color);
+  opacity: 0.6;
+  filter: blur(20px);
+  animation: shine 4s infinite;
+  animation-delay: 0s;
+  transform-origin: top;
+}
+@keyframes shine {
+  from {
+    transform: translate(0) rotate(45deg);
+  }
+  to {
+    transform: translateX(120vh) rotate(45deg);
+  }
+}
+.customPlaceholder::placeholder {
+  color: var(--secondary-color) !important ;
+}
+
+.sabre {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+.galileo {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.flyhub {
+  border-radius: 100%;
+  height: 60px;
+  width: 60px;
+}
+
+.dashboard-calendar {
+  position: absolute;
+  top: 105%;
+  left: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  z-index: 10;
+}
+.new-return-date-range {
+  position: absolute;
+  top: 105%;
+  right: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 5px;
+  z-index: 10;
+}
+.new-return-date-range .rdrDateDisplayWrapper,
+.new-return-date-mobile .rdrDateDisplayWrapper {
+  display: none;
+}
+
+@media all and (max-width: 600px) {
+  .dashboard-calendar {
+    position: absolute;
+    top: 100%;
+    left: -20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    z-index: 10;
+  }
+  .new-return-date-range {
+    position: absolute;
+    width: 92vw;
+    top: 100%;
+    left: -20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+    z-index: 10;
+  }
+  .new-return-date-range .rdrDateDisplayWrapper,
+  .new-return-date-mobile .rdrDateDisplayWrapper {
+    display: none;
+  }
+}

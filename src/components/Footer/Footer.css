@@ -1,0 +1,262 @@
+.footer-bgs {
+  background: var(--secondary-color);
+  margin-top: 100px;
+  padding: 100px 0px;
+  width: "100vh";
+  overflow: hidden;
+  height: "fit-content";
+}
+.companay-centent-child {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin-top: 15px;
+}
+.message-input {
+  width: 50%;
+}
+.custom-footer-btns button {
+  width: 50%;
+  padding: 5px;
+  background: var(--primary-color);
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--white);
+}
+
+.custom-footer-btns button:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+.f-logo {
+  width: 150px;
+  margin-top: -10px;
+}
+.f-logo img {
+  width: 133px;
+}
+
+.icon img {
+  width: 20px;
+  margin-right: 6px;
+  margin-top: 10px;
+}
+
+.company-contentt h5 {
+  margin-top: 0px;
+  color: var(--white);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 27px;
+  text-align: center;
+}
+.company-contenttc,
+.company-contentts h5 {
+  margin-top: 0px;
+  color: var(--white);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 27px;
+}
+
+.company-contentts p {
+  margin: 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  color: #dddddd;
+}
+.company-link a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.company-link button {
+  padding: 2px 0px;
+  color: #fff !important;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.company-link button:nth-child(1) {
+  padding-top: 0;
+}
+.email-p {
+  padding-top: 10px;
+}
+
+.iata {
+  width: 100px;
+  margin: auto;
+  margin-top: -10px;
+}
+.iata img {
+  width: 100%;
+}
+
+.toab {
+  margin: auto;
+  width: 120px !important;
+}
+
+.atab {
+  margin: auto;
+  width: 140px;
+}
+
+.payment-img {
+  text-align: center;
+}
+
+.payment-img img {
+  width: 870px;
+}
+
+.reserve-right p {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.95);
+  margin: 0px;
+  padding: 20px 0px;
+}
+
+.message-input input {
+  padding: 7px 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  background: transparent;
+  color: #fff;
+}
+
+.message-input ::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+/* media query for tab */
+
+@media all and (min-width: 1025px) and (max-width: 2000px) {
+  .subscribe-f {
+    /* margin-left: 100px !important; */
+    padding-left: 50px !important;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  .iata {
+    margin-left: 0;
+  }
+  .toab {
+    margin-left: 0;
+  }
+  .atab {
+    margin-left: 0;
+  }
+  .round-trip {
+    width: 88%;
+  }
+
+  .banner-form-content label {
+    font-size: 12px;
+  }
+
+  .card-content h3 {
+    font-size: 17px;
+  }
+
+  .icon img {
+    width: 20px;
+  }
+
+  .company-contentt h5 {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .company-contentts p {
+    font-size: 14px;
+  }
+}
+@media all and (min-width: 429px) and (max-width: 768px) {
+  .iata {
+    margin-left: 0;
+  }
+  .toab {
+    margin-left: 0;
+  }
+  .atab {
+    margin-left: 0;
+  }
+  .payment-img {
+    padding: 30px 0px;
+  }
+  .payment-img img {
+    width: 500px;
+  }
+  .footer-bgs {
+    padding: 0;
+  }
+  .company-contentt h5 {
+    text-align: left;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 428px) {
+  .f-parent-content {
+    margin-top: 20px !important;
+  }
+  .iata {
+    margin-left: 0;
+  }
+  .toab {
+    margin-left: 0;
+  }
+  .atab {
+    margin-left: 0;
+  }
+  .footer-bgs {
+    margin-top: 50px;
+    padding: 50px 0px;
+  }
+
+  .f-logo {
+    width: 130px;
+  }
+  .f-logo img {
+    width: 100%;
+  }
+
+  .icon img {
+    width: 20px;
+  }
+
+  .company-contentt h5 {
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .company-contentts p {
+    font-size: 14px;
+  }
+
+  .reserve-right p {
+    font-size: 13px;
+  }
+  .payment-img {
+    text-align: center;
+  }
+  .payment-img img {
+    width: 300px;
+  }
+}
+
+.message-input input {
+  width: 100%;
+}

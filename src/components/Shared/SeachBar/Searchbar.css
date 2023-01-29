@@ -1,0 +1,18 @@
+.searchbar .css-me5i37 {
+  height: 42px;
+}
+.searchbar .MuiTabs-indicator {
+  display: none !important;
+}
+.searchbar .Mui-selected {
+  border: 1px solid #fff;
+}
+.searchbar .whiteBox {
+  background-color: white;
+  height: 6px;
+  width: 20px;
+  margin: auto;
+}
+.tab-list-parent {
+  padding: 0px 30px;
+}

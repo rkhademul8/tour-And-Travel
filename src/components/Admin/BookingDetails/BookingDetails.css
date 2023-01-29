@@ -1,0 +1,59 @@
+.returnFlight1 button {
+  background-color: var(--primary-color);
+  border: 0px;
+  width: 125px;
+  height: 27px;
+  color: #fff !important;
+  font-size: 12px;
+}
+
+.queue-detail-passenger-detail h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 25px;
+  color: #767676;
+}
+.queue-detail-passenger-detail h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 25px;
+  color: #003566;
+}
+.note-line {
+  position: relative;
+  border-left: 3px solid #d9d9d9;
+  height: 85px;
+  margin-left: 7px;
+}
+
+.issueTicket button {
+  border: 0px;
+  background: transparent;
+  background: #2564b8 !important;
+  width: 160px;
+  height: 35px;
+  color: #fff;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.issueCancel button {
+  border: 0px;
+  background: transparent;
+  background: #ff4a4a !important;
+  width: 160px;
+  height: 35px;
+  color: #fff;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+}

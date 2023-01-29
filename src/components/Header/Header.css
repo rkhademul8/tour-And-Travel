@@ -1,0 +1,26 @@
+.active-nav {
+  background-color: var(--secondary-color);
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  width: fit-content;
+  height: 100%;
+  border-radius: 5px 5px 0px 0px;
+  padding: 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.normal-nav {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+  width: fit-content;
+  height: 100%;
+  border-radius: 5px 5px 0px 0px;
+  padding: 0px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

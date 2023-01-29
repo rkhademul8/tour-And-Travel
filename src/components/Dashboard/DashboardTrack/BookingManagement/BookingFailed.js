@@ -1,0 +1,383 @@
+import { Box, Grid, Modal, Tooltip, Typography } from "@mui/material";
+import React, { useEffect, useState } from "react";
+import humanizeDuration from "humanize-duration";
+import PhoneIcon from "@mui/icons-material/Phone";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import EventNoteIcon from "@mui/icons-material/EventNote";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+import { useNavigate } from "react-router-dom";
+import secureLocalStorage from "react-secure-storage";
+import Swal from "sweetalert2";
+import { format } from "date-fns";
+import CircularProgress from "@mui/material/CircularProgress";
+
+const style = {
+  position: "absolute",
+  top: "50%",
+  left: "50%",
+  transform: "translate(-50%, -50%)",
+  width: 600,
+  bgcolor: "#fff",
+  boxShadow: 24,
+  pt: 2,
+  px: 4,
+  pb: 3,
+};
+
+const BookingFailed = () => {
+  const user = secureLocalStorage.getItem("user-info");
+  const navigate = useNavigate();
+  const [bookingData, setBookingData] = useState([]);
+
+  const [isLoading, setIsloading] = useState(false);
+
+  useEffect(() => {
+    setIsloading(false);
+    fetch("https://api.flyfarint.com/v.1.0.0/Admin/Booking/failed.php?all")
+      .then((res) => res.json())
+      .then((data) => {
+        setBookingData(data);
+        data.map((item, index) => (item.serial = index + 1));
+        setIsloading(true);
+      });
+
+    // const interval = setInterval(() => {
+    //   const url = "https://api.flyfarint.com/v.1.0.0/Admin/Stats/Dashboard.php";
+    //   fetch(url)
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //       setBookingData(data?.TotalBookingData);
+    //       data?.TotalBookingData.map(
+    //         (item, index) => (item.serial = index + 1)
+    //       );
+    //       setIsloading(true);
+    //     });
+    // }, [15000]);
+    // return () => {
+    //   clearInterval(interval);
+    // };
+  }, []);
+
+  const shortEnglishHumanizer = humanizeDuration.humanizer({
+    round: true,
+    language: "shortEn",
+    languages: {
+      shortEn: {
+        y: () => "y",
+        mo: () => "mo",
+        w: () => "w",
+        d: () => "d",
+        h: () => "h",
+        m: () => "m",
+        s: () => "s",
+        ms: () => "ms",
+      },
+    },
+  });
+
+  const sendToQueuesDetails = (data) => {
+    navigate("/dashboard/manageWebsite/flyfarint/booking/queuesdetails", {
+      state: {
+        data,
+      },
+    });
+  };
+
+  //  modal
+  const [open, setOpen] = React.useState(false);
+  const [note, setNote] = useState("");
+  const [bookingId, setBookingId] = useState("");
+
+  // data get from note api
+  const [noteData, setNoteData] = useState([]);
+
+  const handleOpen = async (bookingId) => {
+    // //console.log(bookingId);
+    setOpen(true);
+    setBookingId(bookingId);
+    await fetch(
+      `https://api.flyfarint.com/v.1.0.0/Admin/Notes/allNote.php?ref=${bookingId}`
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        setNoteData(data);
+      });
+  };
+
+  const handleClose = () => setOpen(false);
+
+  const sendNote = () => {
+    // //console.log(bookingId);
+    // //console.log(bookingId, note, user?.user?.username);
+    let url = `https://api.flyfarint.com/v.1.0.0/Admin/Notes/addNote.php`;
+
+    let body = JSON.stringify({
+      ref: bookingId,
+      note: note,
+      actionBy: user?.user?.username,
+      actionFrom: "ERP",
+    });
+    // //console.log("body", body);
+
+    fetch(url, {
+      method: "POST",
+      headers: {
+        Accept: "*/*",
+        "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8",
+      },
+      body: body,
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        // //console.log(data);
+        if (data.status === "success") {
+          Swal.fire({
+            icon: "success",
+            title: "success",
+            text: "Note added Successfully",
+            confirmButtonText: "ok",
+          });
+        }
+      });
+    handleClose(false);
+  };
+
+  return (
+    <Box className="DestinaTionWise1">
+      <table width={"100%"}>
+        <tr>
+          <th>Sl no</th>
+          <th>Company Name</th>
+          <th>System</th>
+          <th>Route</th>
+          <th>Type</th>
+          <th>Travel Date</th>
+          <th>Airlines</th>
+          <th>Flight No</th>
+          <th>Cabin</th>
+          <th>Pax</th>
+          <th>Net Cost</th>
+          <th style={{ width: "3%" }}>Contact</th>
+        </tr>
+        {/* ?? */}
+
+        {isLoading === true ? (
+          <>
+            {bookingData.length !== 0 ? (
+              <>
+                {bookingData?.map((data) => (
+                  <tr>
+                    <td>{data?.serial}</td>
+                    <td>
+                      <Tooltip
+                        title={data?.companyname}
+                        style={{ width: "50px", margin: "auto" }}
+                      >
+                        <span>
+                          {data?.companyname?.slice(0, 10)}
+                          ...
+                        </span>
+                      </Tooltip>
+                    </td>
+                    <td>{data?.system}</td>
+                    <td>{data?.depfrom + "-" + data?.arrto}</td>
+                    <td>{data?.tripType}</td>
+
+                    <td>
+                      {data?.tripType === "return" ? (
+                        <> {data?.depTime + "-" + data?.arrTime} </>
+                      ) : (
+                        <>{data?.depTime}</>
+                      )}
+                    </td>
+
+                    <td>{data?.airlines}</td>
+                    <td>{data?.flightnumber}</td>
+                    <td>{data?.cabinclass}</td>
+                    <td>{data?.pax}</td>
+                    <td>{data?.netcost} BDT</td>
+                    <td>
+                      <a href={`tel:+${data?.phone}`}>
+                        <PhoneIcon
+                          style={{ color: "#003566", fontSize: "18px" }}
+                        />
+                      </a>
+                      &nbsp;
+                      <a
+                        href={`https://wa.me/+${data?.phone}`}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        <WhatsAppIcon
+                          style={{ color: "green", fontSize: "18px" }}
+                        />
+                      </a>
+                      &nbsp;
+                      <a style={{ cursor: "pointer" }}>
+                        <EventNoteIcon
+                          onClick={() => handleOpen(data?.id)}
+                          style={{ color: "#003566", fontSize: "18px" }}
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                ))}
+              </>
+            ) : (
+              <Typography
+                style={{
+                  textAlign: "center",
+                  color: "#a7a7a7",
+                  marginTop: "5px",
+                  height: "100%",
+                  width: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                Sorry data not available
+              </Typography>
+            )}
+          </>
+        ) : (
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              height: "38vh",
+            }}
+          >
+            <CircularProgress />
+          </Box>
+        )}
+      </table>
+
+      <Box>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="modal-modal-title"
+          aria-describedby="modal-modal-description"
+        >
+          <Box sx={style} className="noteParent">
+            <Box>
+              <Typography
+                style={{
+                  color: "#003566",
+                  fontSize: "20px",
+                  fontWeight: "500",
+                  marginBottom: "10px",
+                }}
+              >
+                Add Note
+              </Typography>
+            </Box>
+            <form onSubmit={sendNote}>
+              <Box
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  gap: "10px",
+                }}
+              >
+                <input
+                  type="text"
+                  placeholder="Create a new note"
+                  style={{
+                    border: "none",
+                    width: "100%",
+                    backgroundColor: "#e0ecfb",
+                    height: "42px",
+                    color: "black",
+                    padding: "0px 10px",
+                  }}
+                  onChange={(e) => setNote(e.target.value)}
+                />
+
+                <button
+                  style={{
+                    backgroundColor: "#003566",
+                    color: "white",
+                    border: "none",
+                    padding: "5px",
+                    width: "140px",
+                    height: "40px",
+                    fontSize: "14px",
+                  }}
+                  type="submit"
+                >
+                  Save
+                </button>
+              </Box>
+            </form>
+
+            <Box
+              className="lineParentBox"
+              style={{ marginTop: "22px", height: "200px", overflowY: "auto" }}
+            >
+              {noteData &&
+                noteData?.map((data) => (
+                  <Grid container>
+                    <Grid item xs={1}>
+                      <Box className="note-line">
+                        <Box
+                          style={{
+                            width: "14px",
+                            height: "14px",
+                            backgroundColor: "#DC143C",
+                            position: "absolute",
+                            left: "-8px",
+                          }}
+                        />
+                      </Box>
+                    </Grid>
+                    <Grid item mt="-3px" xs={11}>
+                      <Typography
+                        sx={{
+                          color: "#003566",
+                          fontSize: "16px",
+                          fontWeight: 500,
+                        }}
+                      >
+                        {data?.note}
+                      </Typography>
+                      <Box py={1}>
+                        <Typography
+                          sx={{
+                            color: "#70A5D8",
+                            fontSize: "12px",
+                            fontWeight: 500,
+                          }}
+                        >
+                          {data?.actionBy}
+                        </Typography>
+                        <Typography
+                          sx={{
+                            color: "#767676",
+                            fontSize: "12px",
+                            fontWeight: 500,
+                          }}
+                        >
+                          {data?.actionAt !== ""
+                            ? format(
+                                new Date(data?.actionAt),
+                                "dd MMM yyyy hh:mm a"
+                              )
+                            : "Transaction Date"}
+                        </Typography>
+                      </Box>
+                    </Grid>
+                  </Grid>
+                ))}
+            </Box>
+          </Box>
+        </Modal>
+      </Box>
+    </Box>
+  );
+};
+
+export default BookingFailed;

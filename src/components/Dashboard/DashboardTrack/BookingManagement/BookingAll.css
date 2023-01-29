@@ -1,0 +1,13 @@
+.note-line {
+  position: relative;
+  border-left: 2px solid #a5a5a5;
+  height: 85px;
+  margin-left: 5px;
+}
+.lineParentBox::-webkit-scrollbar {
+  width: 5px;
+}
+
+.lineParentBox::-webkit-scrollbar-thumb {
+  background: #dc143c;
+}

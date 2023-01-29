@@ -1,0 +1,371 @@
+.line{
+  position: relative;
+  padding-right: 10px;
+  border-left: 2px solid #A5A5A5;
+  height: 110px;
+}
+
+.modal-table-0 {
+  overflow-y: scroll;
+}
+.modal-table {
+  min-width: 800px;
+  overflow-x: scroll;
+}
+
+.modal-table table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  /* border: 2px solid red; */
+}
+.modal-table th,
+td {
+  text-align: left;
+  font-size: 13px;
+  border: none;
+}
+.modal-table th {
+  background-color: #d1e9ff;
+}
+
+.trflyhub {
+  border: 1px solid #dedede;
+}
+.queues-detail-parent {
+  padding: 0px 35px !important;
+}
+
+.queues-detail h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 45px;
+  color: #000000;
+}
+
+.queues-detail h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #003566;
+}
+
+.queues-detail span {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.queues-detail button {
+  font-family: "Poppins";
+  border: none;
+  background: #003566;
+  color: #fff;
+  font-size: 20px;
+  /* width: 125px;
+  height: 45px; */
+  padding: 5px 30px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+}
+
+.queues-detail-bookingInfo span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #003566;
+  background: #d1e9ff;
+  padding: 8px 8px;
+  display: block;
+}
+
+.queues-detail-bookingInfo h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 28px;
+  color: #272323;
+  font-weight: 400;
+}
+
+.queue-detail-FlightInfo span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #003566;
+  background: #d1e9ff;
+  padding: 8px 8px;
+  display: block;
+}
+
+.queue-detail-FlightInfo h5 {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 18px;
+  color: #003566;
+  text-decoration: underline;
+}
+
+.queue-detail-fareInfo span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 13px;
+  /* line-height: 18px; */
+  color: #003566;
+  background: #d1e9ff;
+  padding: 8px 8px;
+  display: block;
+}
+
+.upcharge-btn button {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  height: 35px;
+  color: #fff;
+  background-color: #003566;
+  cursor: pointer;
+  padding: 0px 5px;
+  font-size: 15px;
+}
+
+.upcharge-btn button:hover {
+  background-color: #003566;
+}
+
+.queue-detail-fareInfo table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.queue-detail-fareInfo table td,
+th {
+  text-align: left;
+  padding: 8px;
+  border: none !important;
+  border-bottom: 1px solid #dedede !important;
+  font-size: 13px;
+  text-align: center;
+}
+
+.queue-detail-fareInfo table th {
+  font-family: "Poppins";
+  background: #dc143c;
+  border: none !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #fff;
+}
+
+/* flight-queue-detail-fareInfo Start */
+.flight-queue-detail-fareInfo span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 13px;
+  color: #003566;
+  background: #d1e9ff;
+  padding: 8px 8px;
+  display: block;
+}
+.flight-queue-detail-fareInfo table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.flight-queue-detail-fareInfo table th {
+  font-family: "Poppins";
+  background: #dc143c;
+  border: none !important;
+  text-align: left;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #fff;
+}
+.flight-queue-detail-fareInfo table tr {
+  padding: 8px;
+  border: none !important;
+  margin-bottom: 100px;
+}
+.flight-queue-detail-fareInfo table td {
+  font-size: 12px;
+  border: 1px solid #d1e9ff;
+  text-align: left;
+}
+
+/* flight-queue-detail-fareInfo End */
+
+.queue-detail-passenger-detail span {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: #003566;
+  background: #d1e9ff;
+  padding: 8px 8px;
+  display: block;
+}
+
+.queue-detail-passenger-detail h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+  color: #767676;
+}
+.queue-detail-passenger-detail h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 25px;
+  color: #003566;
+}
+.upcahrge-price-box h5 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 35px;
+  color: #595757;
+}
+
+.upcahrge-price-box h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #003566;
+}
+
+.upcahrge-price-box input {
+  border: none;
+  color: #fff !important;
+  background-color: #595757;
+  padding: 3px 5px;
+  width: 100%;
+}
+
+.upcahrge-price-box input::placeholder {
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+.upcahrge-price-box button {
+  border: none;
+  background-color: #003566;
+  padding: 5px 25px;
+  color: #fff;
+}
+
+.queues-detail-pdf-box {
+  box-shadow: 0px 0px 7px #d1e9ff;
+  padding: 10px 0px;
+}
+
+.queues-detail-pdf-box h4 {
+  margin: 0px 15px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 30px;
+  color: #dc143c;
+}
+.queues-detail-pdf-box hr {
+  width: 89%;
+  margin: auto;
+  margin: 10px 0px;
+  margin: auto;
+  margin-top: 9px;
+  margin-bottom: 7px;
+}
+.queues-detail-pdf-box p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 32px;
+  color: #003566;
+}
+
+.queues-detail-wait-btn button {
+  margin-top: 15px;
+  width: 100%;
+  height: 48px;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  background-color: #003566;
+  color: #fff;
+  border: none;
+  cursor: auto;
+}
+
+.queues-detail-calcel-btn button {
+  margin-top: 15px;
+  width: 100%;
+  border: 1px solid #dc143c;
+  background-color: transparent;
+  color: #dc143c;
+  height: 48px;
+  cursor: pointer;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.queues-detail-pdf-box .MuiAccordionSummary-root {
+  min-height: 35px !important;
+}
+
+.queue-detail-mobile-box {
+  background: #d1e9ff;
+  padding: 20px 15px;
+}
+
+.queue-detail-mobile-box h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30px;
+  color: #003566;
+}
+
+.queue-detail-mobile-box-result h6 {
+  color: #272323;
+}
+
+@media (min-width: 320px) and (max-width: 428px) {
+  .queues-detail-parent {
+    padding: 0px 17px !important;
+  }
+  .queues-detail h2 {
+    font-size: 20px;
+    line-height: 35px;
+    color: #000000;
+    padding-top: 43px;
+  }
+}
+.queues-detail-parent th,
+.queues-detail-parent td {
+  text-align: center;
+  vertical-align: middle;
+}

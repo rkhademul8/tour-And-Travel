@@ -1,0 +1,108 @@
+.agent-parent {
+  padding-top: 100px !important;
+}
+
+.segment-Box {
+  border: 1px solid red;
+}
+
+#fontBold {
+  font-family: "poppins";
+  font-weight: 600;
+}
+
+.agentPdf-header img {
+  width: 158px;
+  height: 53px;
+}
+.agent-flight03 {
+  rotate: 90deg;
+  margin-top: -14px;
+  position: absolute;
+  color: #003566;
+}
+.agentPdf-header h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: right;
+}
+
+.passengerDetails-pdf h4 {
+  color: #003566;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 13px;
+}
+
+.passengerDetails-pdf p {
+  color: #003566;
+
+  font-weight: 500;
+  font-size: 14px;
+  color: #000000;
+  line-height: 22px;
+}
+
+.passengerDetails-pdf span {
+  font-weight: 600;
+}
+
+.flight-itineraries h6 {
+  color: #000000;
+
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 15px;
+  padding-bottom: 5px;
+}
+
+.flight-itineraries p {
+  color: #000000;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.flight-itineraries span {
+  font-weight: 400;
+  padding: 0px;
+}
+
+.pdf-table-cus table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.pdf-table-cus th {
+  color: #000000 !important;
+  background: #dedede;
+  padding: 2px 0px;
+}
+
+.pdf-table-cus td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.pdf-table-cus li {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 8px 0px;
+}
+
+.paymentReceipt h3 {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 11px;
+  color: #000000;
+}
+
+#flight-pdf {
+  font-size: 20px;
+  color: #003566;
+  transform: rotate(92deg);
+}

@@ -1,0 +1,395 @@
+
+.stop-bar-parent{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.stop-bar-line{
+  position: absolute;
+  border-bottom: 2px solid var(--gray);
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: -1;
+}
+.stop-bar-line-details{
+  position: absolute;
+  border-bottom: 2px solid var(--gray);
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1;
+}
+
+
+.flight-filter1 {
+  border-radius: 5px;
+}
+
+.fil-title {
+  color: var(--secondary-color);
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+.check-box-text09 {
+  color: var(--primary-color);
+}
+.check-box-text09 .MuiFormControlLabel-label {
+  color: var(--secondary-color);
+  font-size: 14px !important;
+}
+.box-0 {
+  color: var(--secondary-color) !important;
+}
+.filter-bg09 {
+  background-color: var(--white);
+  margin-bottom: 5px;
+  padding: 7px 14px;
+}
+.filter-bg09:last-child {
+  margin-bottom: 0;
+}
+.AccordionDetails22 {
+  position: relative;
+  padding-top: 0 !important;
+}
+.Accordion12 {
+  border-bottom: 2px solid var(--white) !important;
+}
+.price-slider-line .MuiSlider-rail {
+  color: var(--secondary-color) !important;
+  opacity: 1 !important;
+}
+.price-slider-line .MuiSlider-track {
+  color: var(--primary-color) !important;
+}
+.price-slider-line .MuiSlider-thumb {
+  color: var(--primary-color) !important;
+}
+.price-slider-line .MuiSlider-valueLabel {
+  background-color: var(--primary-color) !important;
+}
+.filter-parent01 .Mui-expanded {
+  margin: 0 !important;
+}
+.MuiAccordionSummary-root {
+  min-height: 45px !important;
+}
+/* -----------Flight content Start------------- */
+.updatebooknowbtn {
+  background: var(--primary-color);
+  height: 100% !important;
+  width: 100%;
+}
+.rupdatebooknowbtn {
+  background: var(--white);
+  padding: 5px 15px 15px 5px;
+  height: 100% !important;
+  text-align: end;
+  position: relative;
+}
+.rupdatebooknowbtninfo {
+  background: var(--white);
+  border-radius: 0px 12px 12px 0px;
+  padding-top: 15px;
+  padding-right: 15px;
+  height: 100% !important;
+  position: relative;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+.b-00 {
+  position: absolute;
+  top: 2%;
+  right: 10%;
+}
+.b-01 {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+}
+.btnbook-0 {
+  color: var(--white) !important;
+  border-radius: 12px 0px !important;
+  padding: 5px 20px !important;
+  background-color: var(--primary-color) !important;
+  margin-top: 5px !important;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btndetails-0 {
+  color: var(--white) !important;
+  font-size: 12px !important;
+  text-transform: capitalize !important;
+}
+.img-text-bag-0 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.img-text-bag-0 img {
+  width: 15px;
+}
+.img-text-0 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.img-text-0 img {
+  width: 20px;
+}
+.code-time0 {
+  color: var(--black);
+  font-size: 17px;
+  font-weight: 500;
+}
+.location-time0 {
+  color: var(--secondary-color);
+  font-size: 13px !important;
+  font-weight: 600 !important;
+}
+.dates0 {
+  font-size: 13px;
+  font-weight: 500;
+}
+/* .stop0{
+      color: var(--primary-color);
+      font-size: 12px;
+      font-weight: 500;
+  }
+  .stop0{
+      color: var(--primary-color);
+      font-size: 12px;
+      font-weight: 500;
+  } */
+.hour0 {
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.arival-text0 {
+  color: var(--secondary-color);
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: -6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.arival-seg2 {
+  display: flex;
+  justify-content: center;
+}
+.arival-text2 {
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.arival-seg-3 {
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+}
+.arival-text {
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: 500;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+/* -----------Flight content------------- */
+.flight-icon-sab1 {
+  border: 2px solid var(--sabre);
+  border-radius: 50%;
+  margin-top: 5px;
+  width: 100%;
+}
+.flight-icon-sab2 {
+  border: 2px solid var(--galileo);
+  border-radius: 50%;
+  margin-top: 5px;
+  width: 100%;
+}
+.flight-icon-sab3 {
+  border: 2px solid var(--flyhub);
+  border-radius: 50%;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.filter-side-0 {
+  top: 0px !important;
+  overflow-y: scroll;
+  position: sticky !important;
+  max-height: 100vh;
+  overflow-x: hidden;
+}
+
+.filter-side-0::-webkit-scrollbar {
+  display: none;
+}
+
+/* ------------Flight Duration start------------- */
+.segment-1 {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: var(--gray);
+  margin-top: 10px;
+}
+
+.segment-circle {
+  display: flex;
+  justify-content: space-between;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+.circle-0 {
+  margin-top: -9px;
+}
+
+.segment-flight1 {
+  rotate: 90deg;
+  margin-top: -13.52px;
+  position: absolute;
+  animation: segmentone ease 2s infinite;
+  color: var(--secondary-color);
+}
+
+@keyframes segmentone {
+  0% {
+    left: 0%;
+    top: 0px;
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    left: 90%;
+    top: 0px;
+    opacity: 0;
+  }
+}
+/* ------Segment-2----------- */
+
+.segment02 {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: var(--gray);
+  margin-top: 10px;
+}
+.segment-stop {
+  width: 20px;
+  height: 5px;
+  background-color: var(--primary-color);
+  margin-top: -1.5px;
+  border-radius: 5px;
+}
+.segment-flight02 {
+  rotate: 90deg;
+  margin-top: -13.52px;
+  position: absolute;
+  animation: segmenttwo ease-out 2.5s infinite;
+  color: var(--secondary-color);
+}
+@keyframes segmenttwo {
+  0% {
+    left: 0%;
+    top: 0px;
+    opacity: 1;
+  }
+  50% {
+    left: 40%;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    left: 90%;
+    top: 0px;
+    opacity: 0;
+  }
+}
+/* ------Segment-3----------- */
+.segment03 {
+  position: relative;
+  height: 2px;
+  width: 100%;
+  background-color: var(--gray);
+  margin-top: 10px;
+}
+.segment-flight03 {
+  rotate: 90deg;
+  margin-top: -14px;
+  position: absolute;
+  animation: segmentthree ease 3s infinite;
+  color: var(--secondary-color);
+}
+@keyframes segmentthree {
+  0% {
+    left: 0%;
+    top: 0px;
+    opacity: 1;
+  }
+  33% {
+    left: 25%;
+    opacity: 1;
+  }
+  66% {
+    left: 58%;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    left: 90%;
+    top: 0px;
+    opacity: 0;
+  }
+}
+.btn0 {
+  background: linear-gradient(121.52deg, #ffa84d 0%, #2564b8 77.49%);
+  border-radius: 0px 0px 5px 5px;
+  height: 100% !important;
+}
+/* ------------Flight Duration End------------- */
+
+@media (min-width: 955px) and (max-width: 1100px) {
+  .updatebooknowbtn {
+    padding: 8px;
+  }
+}
+@media (min-width: 1199px) and (max-width: 1360px) {
+  .booknow-btn-0 {
+    padding: 5px 10px !important;
+    font-size: 12px !important;
+  }
+}
+@media (min-width: 900px) and (max-width: 1090px) {
+  .booknow-btn-0 {
+    padding: 5px 10px !important;
+    font-size: 10px !important;
+  }
+}
+@media (min-width: 320px) and (max-width: 428px) {
+  .circle-0 {
+    margin-top: -8px;
+  }
+}

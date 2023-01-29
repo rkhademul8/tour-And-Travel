@@ -1,0 +1,96 @@
+.circle1 {
+  width: 18px;
+  height: 18px;
+  background-color: #2564b8;
+  border-radius: 50%;
+  position: relative;
+  left: -19px;
+}
+
+.passengerInput1 p {
+  color: #ffa84d;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.passengerInput1 input {
+  border: 0px;
+  border-bottom: 1px solid #2d669b;
+  width: 100%;
+  padding-bottom: 5px;
+  color: #2564b8;
+
+}
+
+.passengerInput1 select {
+  border: 0px;
+  border-bottom: 1px solid #2d669b;
+  width: 100%;
+  padding-bottom: 5px;
+  color: #2564b8;
+}
+
+.passengerInput1 input::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #2d669b;
+  opacity: 1; /* Firefox */
+  font-size: 11px;
+  font-family: "Poppins";
+}
+
+.passengerInput1 input:focus {
+  outline: none;
+}
+.passengerInput1 select:focus {
+  outline: none;
+}
+
+.baggageTable1 table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.baggageTable1 table tr {
+  background-color: #d3e0f0;
+}
+
+.baggageTable1 table tr:hover {
+  background-color: #ffffff !important;
+}
+
+.baggageTable1 table tr th {
+  background-color: #ffa84d;
+  color: #fff;
+  font-size: 14px;
+  padding: 4px 0px;
+  font-weight: 300;
+  font-weight: 500;
+  font-family: "poppins";
+}
+
+.baggageTable1 table tr td {
+  text-align: center;
+  font-size: 14px;
+  color: #2564b8;
+  padding: 4px 0px;
+}
+
+.bookBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bookBtn button {
+  border: 0px;
+  background: transparent;
+  background: #ffa84d !important;
+  width: 160px;
+  height: 35px;
+  color: #fff;
+  font-family: "poppins";
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+}

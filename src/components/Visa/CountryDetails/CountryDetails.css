@@ -1,0 +1,128 @@
+.countryBg {
+  background-image: url(../../../images/About.png),
+    linear-gradient(121.52deg, #5d7f9e 0%, #003566 77.49%);
+  background-repeat: no-repeat;
+  background-position: top 3% left 0%;
+  height: 100vh;
+  width: 100%;
+}
+.countryBg .header-parent {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.flightBimanImg {
+  text-align: right;
+}
+
+.vdPlane img {
+  position: absolute;
+  width: 700px;
+  left: 0;
+  /* bottom: -324px; */
+  top: 100px;
+}
+
+.flightBimanImg img {
+  width: 86.65px;
+  height: 84.43px;
+}
+
+.countryDetails-h2 h2 {
+  margin-top: 20px;
+  font-size: 45px;
+  color: #003566;
+  font-weight: 500;
+}
+
+.visaDetails p {
+  font-size: 18px;
+  /* color: black; */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  padding: 20px 0px;
+  text-align: justify;
+}
+
+.countryBtn {
+  padding: 70px 0px;
+}
+
+.countryBtn button {
+  border: none;
+  background: #da143c;
+  width: 186px;
+  height: 45px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #dddddd;
+  cursor: pointer;
+}
+
+.countryBtn a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  background: #da143c;
+  padding: 10px 50px;
+}
+
+.country-visa-info {
+  margin-top: 20px;
+}
+
+.country-visa-info li {
+  /* color: #fff; */
+  font-size: 15px;
+  line-height: 28px;
+}
+
+.visaContent {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.visaContent img {
+  margin-top: 10px;
+}
+
+.visaContent b {
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.visaContent p {
+  font-family: "Poppins";
+  font-weight: 300;
+  padding: 10px 0px;
+  line-height: 25px;
+}
+
+@media (min-width: 320px) and (max-width: 428px) {
+  .countryBg .header-parent {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .countryDetails-h2 h2 {
+    font-size: 40px;
+    /* color: #fff; */
+    font-weight: 400;
+    font-family: "Poppins";
+  }
+  .visaContent p {
+    font-family: "Poppins";
+    font-weight: 300;
+    padding: 10px 0px;
+    line-height: 25px;
+    font-size: 15px;
+  }
+  .countryBtn a {
+    text-align: center !important;
+  }
+}

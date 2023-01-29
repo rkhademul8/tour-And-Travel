@@ -1,0 +1,36 @@
+.modalStyler {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px;
+}
+.u-input {
+  width: 100%;
+  padding: 11px 0px;
+  font-size: 14px;
+  border: 0px;
+  border-bottom: 1px solid #2d669b;
+  color: #003566;
+  background: transparent !important;
+}
+
+.u-input:focus {
+  outline: none;
+}
+
+.u-input::placeholder {
+  color: #2d669b;
+  opacity: 1;
+}
+
+
+/* .staffPhone .react-tel-input .form-control {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #2d669b;
+}
+.staffPhone .react-tel-input .flag-dropdown {
+  border: none;
+  border-bottom: 1px solid #2d669b;
+} */

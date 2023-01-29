@@ -1,0 +1,172 @@
+.bg8 {
+  background: linear-gradient(121.52deg, #5d7f9e 0%, #003566 77.49%);
+  overflow-y: hidden !important;
+}
+.bg8 .header-parent {
+  padding-top: 30px;
+}
+
+.search-box {
+  padding-top: 100px;
+  text-align: center;
+  background: url(../../../images/About.png);
+  background-repeat: no-repeat;
+  height: 86.3vh;
+}
+
+.visa-search-section {
+  position: relative;
+}
+.visa-search-icon {
+  position: absolute;
+  color: #fff;
+  width: 30px;
+  height: 30px;
+  margin-top: 12px;
+  margin-left: -40px;
+}
+
+.search-box h2 {
+  margin: 0px;
+  font-weight: 500;
+  font-size: 70px;
+  color: black;
+  text-align: center;
+  color: #fff;
+}
+
+.search-box input {
+  background: #da143c;
+  width: 542px;
+  border: none;
+  border-radius: 8px;
+  padding: 0px 20px;
+  color: #fff;
+  height: 54px;
+  font-size: 17px;
+}
+
+.search-box ::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.search-box input:focus {
+  outline: none;
+}
+
+.updateVisa p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 19px;
+  color: #ffffff;
+  text-align: right;
+  position: fixed;
+  bottom: 30px;
+  right: 130px;
+}
+
+.dataResult {
+  width: 540px;
+  max-height: 200px;
+  overflow-y: auto;
+  background-color: #fff;
+  text-align: left;
+  margin: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.dataResultBtn {
+  background-color: #d8ebfc;
+  border-radius: 5px;
+  padding: 0px 20px;
+  margin: 10px;
+  cursor: pointer;
+}
+.dataResultBtn button {
+  border: none;
+  background: transparent;
+  font-size: 16px;
+  color: #003566;
+  padding: 8px 0px;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.dataResult .dataItem {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+  justify-content: center;
+}
+
+/* new style */
+
+.autocomplete-drop {
+  display: flex;
+  justify-content: center;
+}
+
+.autocomplete-drop
+  .css-19im320-MuiAutocomplete-root
+  .MuiOutlinedInput-root
+  .MuiAutocomplete-input {
+  padding: 0px 10px;
+}
+
+.autocomplete-drop ::placeholder {
+  opacity: 1 !important;
+}
+
+.parent-select {
+  width: 43%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+@media (min-width: 320px) and (max-width: 428px) {
+  .bg8 .header-parent {
+    padding-top: 0px;
+  }
+  .search-box h2 {
+    margin: 0px;
+    font-weight: 500;
+    font-size: 45px;
+    color: black;
+    text-align: center;
+    color: #fff;
+    padding: 15px 0px;
+  }
+
+  .autocomplete-drop
+    .css-19im320-MuiAutocomplete-root
+    .MuiOutlinedInput-root
+    .MuiAutocomplete-input {
+    padding: 0px 10px;
+    height: 7vh;
+  }
+
+  .parent-select {
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 429px) and (max-width: 768px) {
+  .parent-select {
+    width: 69%;
+    margin-top: 10px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .parent-select {
+    width: 51%;
+    margin-top: 10px;
+  }
+}

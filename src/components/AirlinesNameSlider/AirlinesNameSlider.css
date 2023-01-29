@@ -1,0 +1,27 @@
+.airlines-slider .slick-prev {
+  color: var(--black);
+  left: 0px;
+  z-index: 1;
+}
+
+.airlines-slider .slick-next {
+  color: var(--black);
+  z-index: 1;
+  right: 0px;
+}
+
+@media all and (max-width: 899px) and (min-width: 700px) {
+  .airlines-slider .slick-list {
+    width: 500px !important;
+  }
+}
+@media all and (max-width: 699px) and (min-width: 500px) {
+  .airlines-slider .slick-list {
+    width: 400px !important;
+  }
+}
+@media all and (max-width: 499px) and (min-width: 200px) {
+  .airlines-slider .slick-list {
+    width: 345px !important;
+  }
+}

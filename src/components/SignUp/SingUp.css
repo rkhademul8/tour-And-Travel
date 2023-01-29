@@ -1,0 +1,172 @@
+.signUp input {
+  width: 100%;
+  height: 38px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  color: var(--primary-color);
+}
+
+.signUp input::placeholder {
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.react-tel-input .form-control {
+  position: relative;
+  font-size: 14px;
+  letter-spacing: 0.01rem;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-left: 48px;
+  margin-left: 0;
+  background: #ffffff;
+  border: none;
+  border-radius: 5px;
+  line-height: 25px;
+  height: 35px;
+  width: 100%;
+  outline: none;
+}
+
+
+
+/* todo: passwordStrengthBar */
+.register-Box .passwordStrengthBar p {
+  display: none;
+}
+
+/* todo:phoneInput */
+.register-Box .react-tel-input {
+  width: 95% !important;
+  height: 100%;
+  border-radius: 5%;
+}
+.register-Box .react-tel-input .form-control {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  height: 100%;
+}
+.register-Box .react-tel-input .flag-dropdown {
+  background-color: transparent;
+}
+.register-Box .PhoneInput input {
+  background-color: transparent;
+  border: none;
+}
+/* !end */
+
+.register-Box {
+  width: 650px !important;
+  height: fit-content;
+  background-color: var(--white);
+  padding: 20px 0px 20px 0px;
+  border-radius: 10px;
+}
+.register-Box .regiter-content h2 {
+  color: var(--mateBlack);
+  text-align: center;
+  font-size: 32px;
+  margin: 0px !important;
+  padding-bottom: 20px !important;
+  /* text-transform: uppercase; */
+}
+.register-Box h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
+
+.register-btnn {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: var(--secondary-color);
+}
+
+.register-btnn Button {
+  background-color: var(--secondary-color);
+  color: var(--white) !important;
+  font-size: 15px;
+  font-weight: bold;
+  width: 99%;
+  border-radius: none;
+}
+
+
+
+/* 
+.register-btnn Button:disabled {
+  background-color: var(--gray);
+  color: var(--white) !important;
+  font-size: 16px;
+  font-weight: bold;
+  width: 99%;
+  border-radius: none;
+  margin-bottom: 20px;
+}
+*/
+/* .register-btnn Button:hover {
+  background-color: var( --secondary-color);
+  color: var(--white) !important;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+  border-radius: none;
+  margin-bottom: 20px;
+}  */
+
+
+
+
+.register-footer button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--primary-color) !important;
+  font-family: "poppins";
+  font-size: 14px;
+  padding: 0px 10px;
+  font-weight: 500;
+}
+
+/* Responsive part  */
+@media only all and (min-width: 320px) and (max-width: 672px) {
+  .register-Box {
+    margin-top: 75px !important;
+    width: 100% !important;
+    max-height: 100vh !important;
+    overflow-y: scroll !important;
+  }
+
+  .register-Box::-webkit-scrollbar {
+    width: 0px !important;
+  }
+
+  .register-Box::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  .register-Box::-webkit-scrollbar-thumb {
+    background: var(--white);
+    border-radius: 5px;
+  }
+
+  .register-Box::-webkit-scrollbar-thumb:hover {
+    background: var(--white);
+  }
+}
+
+@media only screen and (min-width: 429px) and (max-width: 768px) {
+}
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+}
+@media only screen and (min-width: 1699px) and (max-width: 2000px) {
+  .password-00 {
+    padding-left: 30px !important;
+  }
+}

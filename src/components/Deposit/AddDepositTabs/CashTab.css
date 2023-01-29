@@ -1,0 +1,16 @@
+.input-File1 input::file-selector-button {
+  font-weight: bold;
+  color: #fff;
+  padding: 0.5em;
+  border-radius: 3px;
+  border: none;
+  background-color: rgb(37, 100, 184);
+}
+
+.input-File2 input::file-selector-button {
+  font-weight: bold;
+  color: #003566;
+  border-radius: 3px;
+  border: none;
+  background-color: transparent;
+}

@@ -1,0 +1,165 @@
+.left-overflow1 {
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+.left-overflow1 {
+  scrollbar-face-color: #367cd2;
+  scrollbar-shadow-color: #ffffff;
+  scrollbar-highlight-color: #ffffff;
+  scrollbar-3dlight-color: #ffffff;
+  scrollbar-darkshadow-color: #ffffff;
+  scrollbar-track-color: #ffffff;
+  scrollbar-arrow-color: #ffffff;
+}
+
+/* Let's get this party started */
+.left-overflow1::-webkit-scrollbar {
+  width: 8px;
+}
+
+.img-border-color {
+  border: 1px solid red;
+  padding: 2px;
+  border-radius: 50%;
+}
+.left-overflow1::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 0px;
+  background: #e64f6d;
+}
+
+.flight-accordian1 {
+  border-bottom: 0px !important;
+  box-shadow: 0px 0px 0px #fff !important;
+}
+.eticket-hr-line {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  height: 1px;
+  background-color: #dedede;
+}
+.eticket-title-line {
+  margin-top: 5px;
+  width: 100% !important;
+  height: 2px;
+  background-color: #003566;
+}
+.eticket-list li {
+  list-style-type: none;
+  font-size: 11px;
+  font-weight: 500;
+}
+.flight-accordian2 {
+  position: relative;
+  padding-top: 0 !important;
+}
+
+/* segment 1 */
+.segment-line-info {
+  background: transparent;
+  border-left: 3px dotted crimson;
+  height: 51%;
+  position: absolute;
+  left: 25.3%;
+  top: 10px;
+  color: #003566;
+}
+.flight-fly {
+  margin-left: -14px;
+  position: absolute;
+  animation: segment1 ease 3s infinite;
+  rotate: 180deg;
+  font-size: 25px !important;
+}
+@keyframes segment1 {
+  0% {
+    top: 0%;
+    left: 0px;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    top: 100%;
+    left: 0px;
+    opacity: 0;
+  }
+}
+/* segment 2 */
+.segment-line-info2 {
+  background: transparent;
+  border-left: 3px dotted crimson;
+  height: 70%;
+  position: absolute;
+  left: 25.3%;
+  top: 10px;
+  color: #003566;
+}
+.flight-fly2 {
+  margin-left: -14px;
+  position: absolute;
+  animation: segment2 ease 3s infinite;
+  rotate: 180deg;
+  font-size: 25px !important;
+}
+@keyframes segment2 {
+  0% {
+    top: 0%;
+    left: 0px;
+    opacity: 1;
+  }
+  50% {
+    top: 45%;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    top: 90%;
+    left: 0px;
+    opacity: 0;
+  }
+}
+/* segment 3 */
+.segment-line-info3 {
+  background: transparent;
+  border-left: 3px dotted crimson;
+  height: 78%;
+  position: absolute;
+  left: 25.3%;
+  top: 10px;
+  color: #003566;
+}
+.flight-fly3 {
+  margin-left: -14px;
+  position: absolute;
+  animation: segment3 ease 3s infinite;
+  rotate: 180deg;
+  font-size: 25px !important;
+}
+@keyframes segment3 {
+  0% {
+    top: 0%;
+    left: 0px;
+    opacity: 1;
+  }
+  33% {
+    top: 30%;
+    opacity: 1;
+  }
+  66% {
+    top: 63%;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0.5;
+  }
+  100% {
+    top: 98%;
+    left: 0px;
+    opacity: 0;
+  }
+}

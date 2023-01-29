@@ -1,0 +1,33 @@
+@-webkit-keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  color: #fff;
+  font-size: 25px;
+  background: #003566;
+  padding: 1px;
+  border-radius: 50%;
+  -webkit-animation: rotating 1.2s linear infinite;
+  animation: rotating 1.2s linear infinite;
+}
+.no-loading {
+  color: #fff;
+  font-size: 25px;
+  background: #003566;
+  padding: 1px;
+  border-radius: 50%;
+}

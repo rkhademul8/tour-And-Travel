@@ -1,0 +1,7 @@
+/* .ref-color{
+    background-color: red;
+    color: red !important;
+} */
+@media print {
+    .pdf-break {page-break-before: always;}
+  }

@@ -1,0 +1,150 @@
+.login-parent {
+  padding: 20px;
+}
+.email {
+  background: rgba(var(--primary-rgb), 0.4);
+  border-radius: 5px;
+  width: 410px;
+  height: 24px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  color: var(--primary-color);
+  font-size: 15px;
+}
+
+.email::placeholder {
+  color: var(--primary-color);
+  opacity: 1; 
+}
+
+.login-parent h3 {
+  font-weight: 600;
+  font-size: 12px;
+  color: #212529;
+  font-weight: bold;
+}
+.login-parent h3 {
+  text-align: center;
+}
+.login-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-btn button {
+  width: 288px;
+  height: 35px;
+  background-color: #dc143c;
+  margin-bottom: 10px;
+  color: #fff !important;
+}
+.login-btn button:hover {
+  background-color: #dc143c;
+}
+.login-btn button:disabled {
+  width: 288px;
+  height: 35px;
+  background-color: #746b6c;
+  margin-bottom: 10px;
+  color: #fff !important;
+}
+.pass-forget {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pass-forget .align-item {
+  margin-top: 8px;
+}
+.check-box {
+  padding-right: 20px;
+  color: red !important;
+}
+.pass-forget p {
+  margin-top: 5px;
+  color: #003566;
+  font-size: 12px;
+  font-weight: 500;
+}
+.register-footer h5 {
+  margin: 0px;
+  padding: 0px;
+  left: 0px;
+  color: var(--secondary-color);
+}
+.check-box {
+  background-color: var(--primary-color) !important;
+}
+.s-color {
+  color: var(--primary-color) !important;
+}
+
+.fonticon09 {
+  color: var(--secondary-color) !important;
+  font-size: 22px !important;
+}
+.check-box {
+  accent-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 320px) {
+  .login-parent h3 {
+    font-size: 18px;
+  }
+  .css-ahj2mt-MuiTypography-root {
+    font-size: 12px !important;
+  }
+  .email {
+    width: 200px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .login-parent {
+    margin: auto;
+    padding: 10px 20px;
+  }
+  .email {
+    width: 280px;
+  }
+
+  .login-parent h3 {
+    font-size: 17px;
+  }
+
+  .pass-forget p {
+    font-size: 11px;
+  }
+
+  .pass-forget p {
+    margin-top: 13px;
+  }
+
+  .css-ahj2mt-MuiTypography-root {
+    font-size: 12px !important;
+  }
+}
+
+@media only screen and (min-width: 425px) and (max-width: 428px) {
+  .login-parent {
+    margin: auto;
+    padding: 20px 10px;
+  }
+  .email {
+    width: 360px;
+  }
+  .login-parent h3 {
+    font-size: 17px;
+  }
+  .pass-forget p {
+    font-size: 11px;
+  }
+  .pass-forget p {
+    margin-top: 13px;
+  }
+  .css-ahj2mt-MuiTypography-root {
+    font-size: 12px !important;
+  }
+}

@@ -1,0 +1,173 @@
+.size-a5 {
+  width: 8.5in;
+  height: 11in;
+}
+
+.booking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.booking-head-contact {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.booking-head-contact p {
+  text-align: right;
+  color: #222326;
+  font-size: 10px;
+  line-height: 18px;
+  font-weight: bold;
+}
+
+.body-content {
+  margin-top: 80px !important;
+}
+
+.body-content h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #222326;
+}
+
+.body-content span {
+  font-weight: 600;
+  padding: 0px 10px;
+}
+
+.body-content-details1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.body-content-details1 p {
+  font-family: "Poppins";
+  font-size: 10px;
+  line-height: 20px;
+  color: #494a4d;
+  font-weight: 500;
+}
+
+.body-content-details1 span {
+  font-family: "Poppins";
+  font-size: 10px;
+}
+
+.pdf-headingh3 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.pdf-headingh3 h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11px;
+  color: #222326;
+}
+
+.pdf-headingh3 span {
+  font-weight: bold;
+  padding: 0px 0px;
+}
+
+.ITINERARIES {
+  margin: 20px 0px;
+  border: 2px solid #494a4d;
+}
+
+.ITINERARIES h4 {
+  color: #fff;
+  background-color: #494a4d;
+  padding: 8px 12px;
+}
+
+.ITINERARIES-details {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.ITINERARIES-details-img {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.pdf-flight-det {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.pdf-flight-det-left h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  margin-bottom: 0px;
+  color: #222326;
+}
+
+.pdf-flight-det-left h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 10px;
+  margin-bottom: 0px;
+  padding: 0px;
+  color: #222326;
+}
+
+.pdf-flight-det-left span {
+  font-size: 11px;
+}
+
+.pdf-flight-right-det h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  color: #222326;
+  padding: 8px 0px;
+}
+
+.departure-details5 p {
+  font-size: 13px;
+  color: #494a4d;
+}
+
+.departure-details5 span {
+  font-size: 12px;
+  color: #494a4d;
+}
+
+.footer-pdf2 p {
+  padding: 8px 0px;
+  position: relative;
+  top: 39px;
+  color: #fff;
+  left: 30px;
+}
+
+.footer-pdf2 span {
+  position: relative;
+  left: 616px;
+  top: -16px;
+  color: #fff;
+  font-family: "Poppins" !important;
+}
+
+.pdf-preferance span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #222326;
+  line-height: 25px;
+}

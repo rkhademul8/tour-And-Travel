@@ -1,0 +1,266 @@
+/*  tab and table for destination wise style here */
+
+/* ---------Tabs start--------------------- */
+
+.destinationWise {
+  margin-top: 30px;
+}
+.destinationWise .react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+.parent-destinationWise {
+  position: relative;
+}
+.destinationWise .gellery-tab {
+  position: absolute;
+  top: -0px;
+  left: 30%;
+  font-weight: bold;
+}
+
+.destinationWise .react-tabs__tab {
+  display: inline-block;
+  list-style: none;
+  padding: 4px 10px;
+  cursor: pointer;
+  border: 1px solid #2564b8;
+  color: #2564b8;
+  border-radius: 3px;
+}
+
+.destinationWise .react-tabs__tab--selected {
+  color: #fff;
+  background-color: #ffa84d;
+  border: 1px solid #ffa84d;
+  border-radius: 3px;
+}
+
+.destinationWise .react-tabs__tab--disabled {
+  color: GrayText;
+  cursor: default;
+}
+
+.destinationWise .react-tabs__tab:focus {
+  outline: none;
+}
+
+.hoteldestinationWise .react-tabs__tab-panel {
+  display: none;
+}
+
+.destinationWise .react-tabs__tab-panel--selected {
+  display: block;
+}
+
+/* tab style end */
+
+/* table */
+.DestinaTionWise table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 5px;
+  display: block;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.DestinaTionWise table tr th {
+  background-color: #ffa84d;
+  color: #fff;
+  padding: 8px 0px;
+  font-weight: 300;
+  font-size: 12px;
+  width: 10%;
+}
+
+.DestinaTionWise table td,
+th {
+  padding: 8px;
+  text-align: center;
+}
+
+.DestinaTionWise table td {
+  color: #252733;
+  font-size: 12px;
+}
+
+.DestinaTionWise table tr:hover {
+  background-color: #e0ecfb !important;
+}
+
+/* -------------- tab and table style for agent wise  --------------------  */
+
+.agentWise1 {
+  margin-top: 30px;
+}
+
+.agentWise1 .react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+.parent-agentWise {
+  position: relative;
+}
+.agentWise1 .gellery-tab {
+  position: absolute;
+  top: -0px;
+  left: 30%;
+  font-weight: bold;
+}
+
+.agentWise1 .react-tabs__tab {
+  display: inline-block;
+  list-style: none;
+  padding: 4px 10px;
+  cursor: pointer;
+  border: 1px solid #2564b8;
+  color: #2564b8;
+  border-radius: 3px;
+}
+
+.agentWise1 .react-tabs__tab--selected {
+  color: #fff;
+  background-color: #ffa84d;
+  border: 1px solid #ffa84d;
+  border-radius: 3px;
+}
+
+.agentWise1 .react-tabs__tab--disabled {
+  color: GrayText;
+  cursor: default;
+}
+
+.agentWise1 .react-tabs__tab:focus {
+  outline: none;
+}
+
+.agentWise1 .react-tabs__tab-panel {
+  display: none;
+}
+
+.agentWise1 .react-tabs__tab-panel--selected {
+  display: block;
+}
+
+/* tab style end */
+
+/* table */
+.agentWise1 table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 5px;
+  display: block;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.agentWise1 table tr th {
+  background-color: #ffa84d;
+  color: #fff;
+  padding: 8px 0px;
+  font-weight: 300;
+  font-size: 12px;
+  width: 10%;
+}
+
+.agentWise1 table td,
+th {
+  padding: 8px;
+  text-align: center;
+}
+
+.agentWise1 table td {
+  color: #252733;
+  font-size: 12px;
+}
+
+.agentWise1 table tr:hover {
+  background-color: #e0ecfb !important;
+}
+
+/* ------------- tab and table style for staff wise ------------------- */
+.staffWise1 {
+  margin-top: 30px;
+}
+
+.staffWise1 .react-tabs {
+  -webkit-tap-highlight-color: transparent;
+}
+.parent-staffWise1 {
+  position: relative;
+}
+.staffWise1 .gellery-tab {
+  position: absolute;
+  top: -0px;
+  left: 30%;
+  font-weight: bold;
+}
+
+.staffWise1 .react-tabs__tab {
+  display: inline-block;
+  list-style: none;
+  padding: 4px 10px;
+  cursor: pointer;
+  border: 1px solid #dc143c;
+  color: #dc143c;
+}
+
+.staffWise1 .react-tabs__tab--selected {
+  color: #fff;
+  background-color: #dc143c;
+}
+
+.staffWise1 .react-tabs__tab--disabled {
+  color: GrayText;
+  cursor: default;
+}
+
+.staffWise1 .react-tabs__tab:focus {
+  outline: none;
+}
+
+.staffWise1 .react-tabs__tab-panel {
+  display: none;
+}
+
+.staffWise1 .react-tabs__tab-panel--selected {
+  display: block;
+}
+
+/* tab style end */
+
+/* table */
+.staffWise1 table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 5px;
+  display: block;
+  height: 540px;
+  overflow-y: scroll;
+}
+
+.staffWise1 table tr th {
+  background-color: #ffa84d;
+  color: #fff;
+  padding: 8px 0px;
+  font-weight: 300;
+  font-size: 12px;
+  width: 10%;
+}
+
+.staffWise1 table td,
+th {
+  padding: 8px;
+  text-align: center;
+}
+
+.staffWise1 table td {
+  color: #252733;
+  font-size: 12px;
+}
+
+.staffWise1 table tr:hover {
+  background-color: #e0ecfb !important;
+}

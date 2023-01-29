@@ -1,0 +1,157 @@
+/* .custom-row {
+    background-color: red;
+    padding: 10px 20px;
+} */
+
+/* .sc-hKMtZM {
+    background-color: BLUE;
+} */
+
+
+
+.search-data input {
+    border: 1px solid black !important;
+    border-radius: 5px;
+    padding: 8px 5px;
+}
+
+
+/* ::placeholder {
+    color: black !important;
+    opacity: 1;
+    font-size: 15px;
+
+} */
+
+
+.sc-dkzDqf {
+    background-color: #003566 !important;
+    margin-bottom: 20px !important;
+}
+
+
+.parent-table {
+    overflow: hidden !important;
+}
+
+/* table,
+th,
+td {
+    border: 1px solid #fff;
+    border-collapse: collapse;
+    color: #fff;
+    padding: 20px 13px;
+} */
+
+
+
+.data-table-parent {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+
+}
+
+.data-table-parent-content span {
+    color: rgb(136, 135, 135);
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+
+
+
+.data-table-parent-content select {
+    padding: 10px 12px;
+    border: 1px solid rgb(165, 161, 161);
+    height: 35px;
+    color: #f96e03;
+    font-weight: bold;
+}
+
+
+.data-table-child-content select {
+    padding: 10px 12px;
+    border: 1px solid rgb(165, 161, 161);
+    height: 35px;
+    font-weight: bold;
+    color: #212529;
+}
+
+
+.input-data-search label {
+    color: rgb(136, 135, 135);
+    font-size: 18px;
+    padding: 0px 5px;
+}
+
+
+.input-data-search input {
+    border: 1px solid rgb(165, 161, 161) !important;
+    padding: 8px 0px;
+    border-radius: 5px;
+
+}
+
+
+.pre-next-btn-parent {
+    margin-top: 30px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+
+.page-show button {
+    border: none;
+    background: none;
+    background-color: #003566;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff !important;
+}
+
+.pre-next-btn button {
+    border: none;
+    background: none;
+    padding: 10px;
+    color: #666 !important;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.pre-next-btn button:hover {
+    background-color: #003566;
+}
+
+
+
+.data-table-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.table-parent {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+th {
+    background-color: #003566;
+    border: 1px solid #fff;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+.custom-td {
+    background-color: #212529;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+
+}

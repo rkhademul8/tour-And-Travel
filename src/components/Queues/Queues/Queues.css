@@ -1,0 +1,47 @@
+/* Animation round Search bar start  */
+.search-box {
+  
+  background: var(--primary-color);
+  height: 35px;
+  border-radius: 20px;
+  /* padding: 10px; */
+}
+.search-box:hover > .search-text {
+  width: 235px;
+  padding: 0 6px;
+}
+.search-box:hover > .search-btn {
+  background: white;
+  color: black;
+}
+.search-btn {
+  border: none;
+  color: #fff;
+  float: right;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.search-box input::placeholder {
+  color: #fff;
+}
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  font-weight: normal;
+  transition: 0.4s;
+  line-height: 35px;
+  width: 0px;
+}

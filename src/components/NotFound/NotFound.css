@@ -1,0 +1,46 @@
+.not-found-wrapper {
+  background-image: url("../../images/404Page/404PageImg.png"),
+    linear-gradient(
+      121.52deg,
+      var(--secondary-color) 100%,
+      var(--primary-color) 0%
+    );
+  background-repeat: no-repeat;
+  background-position: top 20% left 10%;
+  height: 100vh;
+  width: 100%;
+}
+
+.not-found-wrapper .not-found {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.not-found-wrapper .not-found-title {
+  font-size: 10rem;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 3px #5d7f9e;
+  margin-bottom: -1rem;
+}
+.not-found-wrapper .not-found-subtitle {
+  color: #5d7f9e;
+  margin-bottom: 3rem;
+}
+.not-found-wrapper .not-found-paragraph {
+  width: 50%;
+  color: #fff;
+  font-size: 1.2rem;
+}
+.not-found-wrapper .not-found-btn {
+  background-color: var(--primary-color) !important;
+  box-shadow: none;
+  margin-top: 1.5rem;
+}
+.not-found-wrapper .not-found-link {
+  color: #fff;
+  text-decoration: none;
+}

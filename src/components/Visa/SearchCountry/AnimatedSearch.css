@@ -1,0 +1,111 @@
+.animated-search-container {
+  display: flex;
+  height: 60vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.custom-search-container {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: fit-content;
+  align-items: center;
+  background-color: transparent;
+}
+
+.custom-search-container .search-bar-container {
+  display: flex;
+  align-items: center;
+  background-color: aliceblue;
+  padding: 5px;
+  width: 450px;
+  height: 50px;
+  border-radius: 50px;
+  /* box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.2),
+    -6px -6px 10px rgba(255, 255, 255, 0.7); */
+  margin: 10px;
+  position: relative;
+  transition: width 1.5s;
+}
+
+.custom-search-container .magnifier {
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  left: 20px;
+}
+
+.custom-search-container .mic-icon {
+  width: 30px;
+  position: absolute;
+  right: 10px;
+  transition: width 0.4s;
+  transition-delay: 1s;
+}
+
+.custom-search-container .input {
+  background-color: transparent;
+  border: none;
+  margin: 10px 50px;
+  width: 100%;
+  outline: none;
+  color: rgb(100, 100, 100);
+  transition: width 1s;
+  transition-delay: 0.5s;
+}
+
+.custom-search-container .active.search-bar-container {
+  width: 50px;
+}
+
+.custom-search-container .active .input {
+  width: 0;
+}
+
+.custom-search-container .active .mic-icon {
+  width: 0;
+}
+.animated-search-container .search-results-container {
+  width: 400px !important;
+  max-height: 100px !important;
+}
+.animated-search-container .dataResult {
+  width: 400px !important;
+  max-height: 100px !important;
+  background-color: #fff;
+  overflow: hidden;
+  overflow-y: auto;
+  margin: auto;
+  margin-top: 2px;
+  padding: 10px;
+  text-align: left;
+  border-radius: 10px;
+}
+.animated-search-container .dataResultBtn {
+  background-color: #d8ebfc;
+  border-radius: 5px;
+  padding: 0px 20px;
+  margin-bottom: 5px;
+}
+.animated-search-container .dataResultBtn button {
+  border: none;
+  background: transparent;
+  color: #003566;
+  padding: 8px 0px;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-weight: 500;
+}
+
+.animated-search-container .dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.animated-search-container .dataResult .dataItem {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+  justify-content: center;
+}

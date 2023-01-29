@@ -1,0 +1,175 @@
+.flight-details-title {
+  color: var(--black);
+  font-weight: 600;
+  font-size: 16px;
+}
+.input-passenger-btn {
+  background: linear-gradient(121.52deg, #5d7f9e 0%, #003566 77.49%);
+  height: 100px !important;
+  color: #fff !important;
+  border-radius: 0px 12px 12px 0px !important;
+  padding: 10px !important;
+}
+@media all and (max-width: 768px) and (min-width: 429px) {
+  .input-passenger-btn {
+    background: linear-gradient(121.52deg, #5d7f9e 0%, #003566 77.49%);
+    height: 50px !important;
+    width: 100%;
+    color: #fff !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+  }
+}
+@media all and (max-width: 428px) and (min-width: 320px) {
+  .input-passenger-btn {
+    background: linear-gradient(121.52deg, #5d7f9e 0%, #003566 77.49%);
+    height: 50px !important;
+    color: #fff !important;
+    border-radius: 12px !important;
+    padding: 10px !important;
+  }
+}
+.input-passenger-btn-round {
+  background: linear-gradient(121.52deg, #5d7f9e 0%, #003566 77.49%);
+  height: 160px;
+  color: #fff !important;
+  border-radius: 0px 12px 12px 0px !important;
+  padding: 10px !important;
+}
+
+.shadow-accordion {
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25) !important;
+  padding: 8px 0px;
+}
+
+.flightDetails h4 {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 33px;
+  color: #003566;
+}
+
+.flightDetailsBox-parent {
+  width: 95%;
+  margin: auto;
+}
+
+.flightDetailsBox {
+  background: #ffffff;
+  box-shadow: 0px 0px 4px rgba(84, 84, 84, 0.11);
+
+  margin-bottom: 40px;
+}
+
+.accordion-header {
+  /* font-family: "Poppins"; */
+  font-size: 19px;
+  line-height: 28px;
+  color: #003566;
+  font-weight: 600 !important;
+}
+
+.travellers {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #003566;
+  margin: 0px;
+  margin-bottom: 10px;
+}
+
+.traveller-base {
+  display: flex;
+  gap: 403px;
+}
+
+.traveller-tax {
+  display: flex;
+  gap: 400px;
+}
+
+.traveller-fare {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+.traveller-box {
+  padding: 20px 0px;
+}
+
+.traveller-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-grid {
+  margin-top: 38px !important;
+}
+
+.price-grid-child {
+  padding-left: 45px;
+}
+@media all and (max-width: 768px) and (min-width: 320px) {
+  .price-grid-child {
+    padding-left: 0px;
+  }
+}
+
+.baggage-details h4 {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #000000;
+}
+
+.baggage-details h2,
+p {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  color: #857474;
+}
+
+.passenger-baggage h3 {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.passenger-baggage p {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #857474;
+  margin: 0px;
+  padding: 4px 0px;
+}
+
+.passenger-baggage span {
+  padding: 0px 30px;
+}
+
+.cancellation p {
+  /* font-family: "Poppins"; */
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 30px;
+  color: #000000;
+}
